@@ -1,0 +1,20 @@
+{
+  "replacementPatterns": [
+    {
+      "pattern": "^/",
+      "replacement": "/github/workspace/"
+    }
+  ],
+  "ignorePatterns": [
+    {
+      "pattern": "^https://github.com/BjornMelin"
+    },
+    {
+      "pattern": "^http://localhost"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s"
+}
