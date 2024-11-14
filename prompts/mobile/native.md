@@ -330,7 +330,6 @@ Focus: Product listing optimization
      - Certificate management
 
    - Android:
-   
      - Kotlin best practices
      - Material design
      - Play Store guidelines

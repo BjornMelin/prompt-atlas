@@ -21,7 +21,7 @@ Expert-level prompt templates for modern software development using AI pair prog
 
 ## 📚 Quick Links
 
-- [Getting Started](#getting-started)
+- [Getting Started](#-getting-started)
 - [Templates Library](./prompts/)
 - [Examples](./examples/)
 - [Contributing](CONTRIBUTING.md)

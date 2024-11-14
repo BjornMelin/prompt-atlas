@@ -5,7 +5,7 @@
 - [Database Design](#database-design)
 - [Query Optimization](#query-optimization)
 - [Data Migration](#data-migration)
-- [Performance Tuning](#performance-tuning)
+- [Database Performance Tuning](#database-performance-tuning)
 - [Examples](#examples)
 
 ## Database Design
@@ -139,7 +139,7 @@ Plan database migration from [source] to [target] with:
    - Success criteria
 ```
 
-## Performance Tuning
+## Database Performance Tuning
 
 ### Database Optimization
 

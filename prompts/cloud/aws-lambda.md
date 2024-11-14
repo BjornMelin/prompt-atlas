@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Function Development](#function-development)
-- [Event Processing](#event-processing)
+- [Event Processing](#event-processing-function)
 - [Integration Patterns](#integration-patterns)
 - [Optimization](#optimization)
 - [Examples](#examples)

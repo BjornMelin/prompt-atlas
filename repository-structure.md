@@ -1,6 +1,6 @@
 # Repository Structure
 
-```
+```plaintext
 ai-powered-development-prompts/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
@@ -44,7 +44,7 @@ ai-powered-development-prompts/
 └── repository-structure.md            # Repository structure guide
 ```
 
-## Key Files and Their Contents:
+## Key Files and Their Contents
 
 1. **README.md**
 
