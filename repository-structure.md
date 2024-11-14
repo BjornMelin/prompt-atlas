@@ -13,7 +13,7 @@ ai-powered-development-prompts/
 │
 ├── docs/
 │   ├── best-practices.md               # Development prompt best practices
-│   ├── getting-started.md             # Quick start guide for new users
+│   ├── getting-started.md              # Quick start guide for new users
 │   └── examples/
 │       └── lambda-image-processor.md   # Example implementation
 │
@@ -38,9 +38,10 @@ ai-powered-development-prompts/
 │       ├── flutter.md                 # Flutter development
 │       └── native.md                  # Native mobile development
 │
-├── CONTRIBUTING.md                     # Contribution guidelines
+├── CONTRIBUTING.md                    # Contribution guidelines
 ├── LICENSE                            # MIT License
-└── README.md                          # Project documentation and overview
+├── README.md                          # Project documentation and overview
+└── repository-structure.md            # Repository structure guide
 ```
 
 ## Key Files and Their Contents:
