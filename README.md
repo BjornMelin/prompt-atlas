@@ -30,6 +30,7 @@ Expert-level prompt templates for modern software development using AI pair prog
 ## 🚀 Getting Started
 
 1. **Choose Your Template**
+
    ```bash
    # Navigate to the relevant category
    prompts/
@@ -40,6 +41,7 @@ Expert-level prompt templates for modern software development using AI pair prog
    ```
 
 2. **Customize Your Prompt**
+
    - Replace placeholder values with your specific requirements
    - Follow the examples provided in each template
    - Add or remove sections based on your needs
@@ -52,21 +54,25 @@ Expert-level prompt templates for modern software development using AI pair prog
 ## 📋 Available Templates
 
 ### Cloud Development
+
 - [AWS Lambda Functions](./prompts/cloud/aws-lambda.md)
 - [Serverless Applications](./prompts/cloud/serverless.md)
 - [Cloud Architecture](./prompts/cloud/architecture.md)
 
 ### Frontend Development
+
 - [React Applications](./prompts/frontend/react.md)
 - [Performance Optimization](./prompts/frontend/performance.md)
 - [Component Architecture](./prompts/frontend/components.md)
 
 ### Backend Development
+
 - [API Design](./prompts/backend/api.md)
 - [Database Optimization](./prompts/backend/database.md)
 - [Microservices](./prompts/backend/microservices.md)
 
 ### Mobile Development
+
 - [React Native](./prompts/mobile/react-native.md)
 - [Flutter](./prompts/mobile/flutter.md)
 - [Native Apps](./prompts/mobile/native.md)
@@ -75,10 +81,11 @@ Expert-level prompt templates for modern software development using AI pair prog
 
 ```markdown
 I need to develop an AWS Lambda function for image processing with:
+
 1. Function Specifications:
    - Runtime: Python 3.11
    - Memory allocation: 1024 MB
-   ...
+     ...
 
 [See full example in examples/lambda-image-processor.md]
 ```
@@ -88,6 +95,7 @@ I need to develop an AWS Lambda function for image processing with:
 Your contributions are always welcome! See our [Contribution Guidelines](CONTRIBUTING.md) for ways to get started.
 
 We accept:
+
 - 📝 New prompt templates
 - 🎨 Template improvements
 - 📚 Documentation updates
@@ -121,11 +129,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 ### Bjorn Melin
+
 [![AWS Certified Solutions Architect](https://images.credly.com/size/110x110/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png)](https://www.credly.com/org/amazon-web-services/badge/aws-certified-solutions-architect-associate)
 [![AWS Certified Developer](https://images.credly.com/size/110x110/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png)](https://www.credly.com/org/amazon-web-services/badge/aws-certified-developer-associate)
 [![AWS Certified Cloud Practitioner](https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png)](https://www.credly.com/org/amazon-web-services/badge/aws-certified-cloud-practitioner)
 
 AWS-certified Solutions Architect and Developer with expertise in cloud architecture and modern development practices. Connect with me on:
+
 - [GitHub](https://github.com/BjornMelin)
 - [LinkedIn](https://www.linkedin.com/in/bjorn-melin/)
 

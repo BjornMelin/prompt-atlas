@@ -1,6 +1,7 @@
 # Getting Started with AI-Powered Development Prompts
 
 ## Table of Contents
+
 - [Quick Start](#quick-start)
 - [Understanding Prompt Structure](#understanding-prompt-structure)
 - [Choosing the Right Template](#choosing-the-right-template)
@@ -10,7 +11,9 @@
 ## Quick Start
 
 ### 1. Choose Your Project Type
+
 Navigate to the relevant category in the `prompts/` directory:
+
 ```bash
 prompts/
 ├── cloud/        # Cloud and serverless
@@ -20,13 +23,16 @@ prompts/
 ```
 
 ### 2. Select a Template
+
 Each category contains specialized templates:
+
 - Basic application structure
 - Architecture patterns
 - Development workflows
 - Integration guides
 
 ### 3. Customize the Prompt
+
 1. Copy the template
 2. Replace placeholder values
 3. Add specific requirements
@@ -34,6 +40,7 @@ Each category contains specialized templates:
 5. Specify constraints
 
 ### 4. Iterate and Refine
+
 - Start with basic requirements
 - Add details progressively
 - Incorporate feedback
@@ -42,19 +49,24 @@ Each category contains specialized templates:
 ## Understanding Prompt Structure
 
 ### 1. Basic Components
+
 Every prompt should include:
+
 ```markdown
 1. Context
+
    - Project background
    - Current state
    - Goals
 
 2. Requirements
+
    - Functional needs
    - Technical constraints
    - Performance targets
 
 3. Implementation
+
    - Technology choices
    - Architecture decisions
    - Integration points
@@ -66,7 +78,9 @@ Every prompt should include:
 ```
 
 ### 2. Optional Elements
+
 Based on project needs:
+
 - Security requirements
 - Compliance needs
 - Scale considerations
@@ -75,27 +89,35 @@ Based on project needs:
 ## Choosing the Right Template
 
 ### 1. Project Assessment
+
 Consider:
+
 - Project scale
 - Technical requirements
 - Time constraints
 - Team expertise
 
 ### 2. Template Selection
+
 Choose based on:
+
 - Development phase
 - Technology stack
 - Architecture needs
 - Integration requirements
 
 ### 3. Template Categories
+
 Available templates:
+
 1. **Architecture Design**
+
    - System design
    - Component interaction
    - Scalability patterns
 
 2. **Implementation**
+
    - Code structure
    - Development patterns
    - Best practices
@@ -108,20 +130,24 @@ Available templates:
 ## Customizing Templates
 
 ### 1. Basic Customization
+
 ```markdown
 Original:
 I need to develop [application] with [requirements]
 
 Customized:
 I need to develop a real-time chat application with:
+
 - WebSocket support
 - Message persistence
 - User presence
 ```
 
 ### 2. Adding Requirements
+
 ```markdown
 Technical Requirements:
+
 - Runtime: Node.js 18+
 - Database: MongoDB
 - Cache: Redis
@@ -129,8 +155,10 @@ Technical Requirements:
 ```
 
 ### 3. Specifying Constraints
+
 ```markdown
 Constraints:
+
 - Maximum latency: 100ms
 - Concurrent users: 10,000
 - Message size: < 1MB
@@ -140,23 +168,29 @@ Constraints:
 ## Advanced Usage
 
 ### 1. Combining Templates
+
 Merge multiple templates for complex projects:
+
 ```markdown
 1. Architecture Template
-   + API Design Template
-   + Database Schema Template
-   = Complete System Design
+   - API Design Template
+   - Database Schema Template
+     = Complete System Design
 ```
 
 ### 2. Custom Sections
+
 Add project-specific sections:
+
 - Compliance requirements
 - Legacy system integration
 - Migration strategies
 - Rollout plans
 
 ### 3. Template Extension
+
 Extend templates with:
+
 - Custom workflows
 - Team standards
 - Company policies
@@ -165,17 +199,20 @@ Extend templates with:
 ## Tips for Success
 
 1. **Start Simple**
+
    - Begin with core requirements
    - Add complexity gradually
    - Validate assumptions early
 
 2. **Be Specific**
+
    - Use exact versions
    - Specify numbers
    - Define boundaries
    - Include metrics
 
 3. **Think Long-term**
+
    - Consider maintenance
    - Plan for scaling
    - Document decisions

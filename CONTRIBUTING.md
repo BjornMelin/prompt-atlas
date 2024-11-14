@@ -5,18 +5,21 @@ First off, thank you for considering contributing to AIPD! It's people like you 
 ## 🤝 Ways to Contribute
 
 1. **Add New Prompts**
+
    - Follow the existing template structure
    - Include clear examples
    - Add appropriate documentation
    - Ensure proper categorization
 
 2. **Improve Existing Prompts**
+
    - Enhance clarity
    - Add missing scenarios
    - Update with new best practices
    - Fix errors or outdated information
 
 3. **Documentation**
+
    - Improve existing documentation
    - Add new examples
    - Create tutorials
@@ -38,11 +41,13 @@ First off, thank you for considering contributing to AIPD! It's people like you 
 ### Pull Request Guidelines
 
 1. **Template Structure**
+
    - Follow existing prompt templates
    - Maintain consistent formatting
    - Include all necessary sections
 
 2. **Documentation**
+
    - Update README.md if needed
    - Add comments where necessary
    - Include usage examples
@@ -55,9 +60,12 @@ First off, thank you for considering contributing to AIPD! It's people like you 
 ## 🌟 Style Guide
 
 ### Prompt Format
+
 ```markdown
 I need to [action] with:
+
 1. Requirements:
+
    - [Requirement 1]
    - [Requirement 2]
 
@@ -67,6 +75,7 @@ I need to [action] with:
 ```
 
 ### Markdown Guidelines
+
 - Use appropriate headers (H1 for title, H2 for major sections)
 - Include code blocks with proper language tags
 - Use lists for multiple items
@@ -75,6 +84,7 @@ I need to [action] with:
 ## 🔍 Review Process
 
 1. Your PR will be reviewed for:
+
    - Template consistency
    - Technical accuracy
    - Documentation quality
@@ -87,12 +97,14 @@ I need to [action] with:
 ## 📜 Code of Conduct
 
 ### Our Standards
+
 - Be respectful and inclusive
 - Accept constructive criticism
 - Focus on what's best for the community
 - Show empathy towards others
 
 ### Our Responsibilities
+
 - Maintain project quality
 - Review contributions fairly
 - Provide feedback constructively
@@ -101,6 +113,7 @@ I need to [action] with:
 ## ❓ Questions?
 
 Feel free to open an issue for:
+
 - Clarifications
 - Feature requests
 - General questions
