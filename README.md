@@ -38,7 +38,8 @@ Expert-level prompt templates for modern software development using AI pair prog
    ├── frontend/     # Frontend development templates
    ├── backend/      # Backend and API templates
    ├── mobile/       # Mobile development prompts
-   └── python/       # Reusable expert Python prompts
+   ├── python/       # Reusable expert Python prompts
+   └── typescript/   # Reusable expert TypeScript Prompts - Next.js, React
    ```
 
 2. **Customize Your Prompt**
