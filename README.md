@@ -37,7 +37,9 @@ Expert-level prompt templates for modern software development using AI pair prog
    ├── cloud/        # Cloud-specific prompts (AWS, Azure, GCP)
    ├── frontend/     # Frontend development templates
    ├── backend/      # Backend and API templates
-   └── mobile/       # Mobile development prompts
+   ├── mobile/       # Mobile development prompts
+   ├── python/       # Reusable expert Python prompts
+   └── typescript/   # Reusable expert TypeScript Prompts - Next.js, React
    ```
 
 2. **Customize Your Prompt**
@@ -76,6 +78,14 @@ Expert-level prompt templates for modern software development using AI pair prog
 - [React Native](./prompts/mobile/react-native.md)
 - [Flutter](./prompts/mobile/flutter.md)
 - [Native Apps](./prompts/mobile/native.md)
+
+### Python Development
+
+- [Expert-level Python Prompts](./prompts/python/)
+
+### TypeScript
+
+- [Expert TypeScript Prompts (Next.js, React)](./prompts/typescript/)
 
 ## 💡 Example Usage
 
