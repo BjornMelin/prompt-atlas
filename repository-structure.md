@@ -19,29 +19,46 @@ ai-powered-development-prompts/
 │
 ├── prompts/
 │   ├── cloud/
-│   │   ├── aws-lambda.md              # AWS Lambda development prompts
-│   │   ├── serverless.md              # Serverless architecture prompts
-│   │   └── architecture.md            # Cloud architecture design prompts
+│   │   ├── aws-lambda.md               # AWS Lambda development prompts
+│   │   ├── serverless.md               # Serverless architecture prompts
+│   │   └── architecture.md             # Cloud architecture design prompts
 │   │
 │   ├── frontend/
-│   │   ├── react.md                   # React development prompts
-│   │   ├── performance.md             # Frontend performance optimization
-│   │   └── components.md              # Component design patterns
+│   │   ├── react.md                    # React development prompts
+│   │   ├── performance.md              # Frontend performance optimization
+│   │   └── components.md               # Component design patterns
 │   │
 │   ├── backend/
-│   │   ├── api.md                     # API development prompts
-│   │   ├── database.md                # Database design prompts
-│   │   └── microservices.md           # Microservices architecture prompts
+│   │   ├── api.md                      # API development prompts
+│   │   ├── database.md                 # Database design prompts
+│   │   └── microservices.md            # Microservices architecture prompts
 │   │
-│   └── mobile/
-│       ├── react-native.md            # React Native development
-│       ├── flutter.md                 # Flutter development
-│       └── native.md                  # Native mobile development
+│   ├── mobile/
+│   │   ├── react-native.md             # React Native development
+│   │   ├── flutter.md                  # Flutter development
+│   │   └── native.md                   # Native mobile development
+│   │
+│   ├── python/                         # Python-specific prompts
+│   ├── typescript/                     # TypeScript-specific prompts
+│   ├── prompt-engineering/             # Prompt engineering guides
+│   └── cicd/                           # CI/CD pipeline templates
 │
-├── CONTRIBUTING.md                    # Contribution guidelines
-├── LICENSE                            # MIT License
-├── README.md                          # Project documentation and overview
-└── repository-structure.md            # Repository structure guide
+├── rules/
+│   ├── cursor-ai-agent/                # Autonomous Cursor AI agent framework
+│   │   ├── README.md                   # Overview and instructions
+│   │   ├── system_prompt.md            # System prompt for Cursor AI
+│   │   ├── project_config.md           # Long-term memory template
+│   │   └── workflow_state.md           # Short-term memory and rules template
+│   │
+│   ├── cursorrules/                    # Rules for Cursor AI coding assistant
+│   │   └── git_feature_workflow.mdc    # Git feature branch workflow rules
+│   │
+│   └── copilot/                        # GitHub Copilot optimization
+│
+├── CONTRIBUTING.md                     # Contribution guidelines
+├── LICENSE                             # MIT License
+├── README.md                           # Project documentation and overview
+└── repository-structure.md             # Repository structure guide
 ```
 
 ## Key Files and Their Contents
@@ -52,8 +69,10 @@ ai-powered-development-prompts/
    - AWS certification badges
    - Features and capabilities
    - Quick start guide
+   - Template categories
    - Author information
    - Contribution links
+   - Citation information
 
 2. **CONTRIBUTING.md**
 
@@ -96,3 +115,28 @@ ai-powered-development-prompts/
       # ... rest of template
    ```
    ````
+
+6. **rules/cursor-ai-agent/system_prompt.md**
+
+   ```markdown
+   # Cursor AI Agent System Prompt
+
+   You are an autonomous AI developer operating on a two-file system for project management and execution. Your knowledge and actions are guided exclusively by:
+
+   1. project_config.md (Long-Term Memory): Contains stable project information...
+   2. workflow_state.md (Short-Term Memory + Rules + Log): Contains dynamic information...
+   
+   # ... rest of system prompt
+   ```
+
+7. **rules/cursorrules/git_feature_workflow.mdc**
+
+   ```markdown
+   # Git Feature Branch Workflow with Conventional Commits
+
+   ## Guiding Principle: Conventional Commits
+
+   **All Git operations MUST adhere to the Conventional Commits specification.**
+   
+   # ... rest of workflow rules
+   ```
