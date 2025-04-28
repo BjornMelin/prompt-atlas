@@ -1,0 +1,97 @@
+# Filename: git_feature_workflow.mdc
+# Version: 1.0.0
+# Author: [Your Name/Team]
+# Description: Defines the standard Git workflow for developing new features or tasks using Conventional Commits.
+
+# Git Feature Branch Workflow with Conventional Commits
+
+## Guiding Principle: Conventional Commits
+
+**All Git operations MUST adhere to the Conventional Commits specification.** This includes:
+
+* **Branch Names:** Use the format `<type>/<short-description>` or `<type>/<scope>/<short-description>`.
+    * Examples: `feat/add-user-login`, `fix/auth/token-refresh-bug`, `docs/update-readme`
+* **Commit Messages:** Use the format `<type>(<scope>): <description>`. The scope is optional.
+    * Examples: `feat(api): add endpoint for user profiles`, `fix: correct typo in settings page`, `refactor(auth): simplify login logic`
+* **Pull Request Titles:** Should clearly reflect the primary purpose of the branch, ideally matching the main commit message or a summary following the Conventional Commit format.
+
+---
+
+## Workflow Steps
+
+### 1. Starting a New Feature/Task
+
+* **Ensure `main` is Up-to-Date:** Before starting new work, make sure your local `main` branch reflects the remote repository.
+    ```bash
+    git checkout main
+    git pull origin main
+    ```
+* **Create a New Feature Branch:** Create a new branch off `main` using the Conventional Commit naming convention.
+    ```bash
+    # Replace <type>/<short-description> with your specific branch name
+    git checkout -b <type>/<short-description>
+    # Example: git checkout -b feat/new-dashboard-widget
+    ```
+
+### 2. Development and Committing
+
+* **Implement the Feature/Fix:** Perform the necessary code changes, documentation updates, etc.
+* **Commit Changes Frequently:** Make small, logical commits using the Conventional Commit message format.
+    ```bash
+    # Stage your changes
+    git add . 
+    # Or git add <specific-file>
+
+    # Commit with a conventional message
+    git commit -m "<type>(<scope>): <description>"
+    # Example: git commit -m "feat(ui): implement basic widget structure"
+    # Example: git commit -m "fix(api): resolve data fetching error"
+    ```
+
+### 3. Pushing and Creating a Pull Request
+
+* **Push the Branch to Remote:** Once the feature is complete or ready for review, push your local branch to the remote repository (`origin`). Use the `-u` flag the first time to set the upstream tracking reference.
+    ```bash
+    git push -u origin <branch-name>
+    # Example: git push -u origin feat/new-dashboard-widget 
+    # Subsequent pushes on the same branch can just use: git push
+    ```
+* **Create a Pull Request (PR):**
+    * Navigate to your Git hosting platform (GitHub, GitLab, Bitbucket, etc.).
+    * Initiate a new Pull Request.
+    * **Base Branch:** `main`
+    * **Compare Branch:** Your feature branch (`<type>/<short-description>`)
+    * **Title:** Use a clear Conventional Commit style title summarizing the change.
+    * **Description:** Provide context, link issues, explain changes as needed.
+
+### 4. Review and Merge
+
+* **Code Review:** The PR should be reviewed by team members according to your team's standards.
+* **Address Feedback:** Make any necessary changes based on review feedback, committing and pushing updates to your feature branch.
+* **Merge the PR:** Once approved, merge the Pull Request into the `main` branch (usually via the hosting platform's UI). Ensure the merge process *deletes the feature branch on the remote* repository (this is often a setting during the merge).
+
+### 5. Local Cleanup After Merge
+
+* **Switch Back to `main`:** Go back to your local `main` branch.
+    ```bash
+    git checkout main
+    ```
+* **Update Local Repository:** Fetch changes from the remote, prune remote branches that no longer exist (`-p` or `--prune`), and pull all updates to ensure your local `main` and other tracking branches are synchronized.
+    ```bash
+    # Fetch updates and prune deleted remote branches
+    git fetch --prune origin 
+    # Or: git fetch -p 
+
+    # Pull updates for all tracked branches, including main
+    git pull --all 
+    # Alternatively, more specifically after checkout main: git pull origin main
+    ```
+* **Delete Local Feature Branch:** Remove the now-merged feature branch from your local machine. Use `-D` (force delete) as the branch is fully merged.
+    ```bash
+    git branch -D <branch-name>
+    # Example: git branch -D feat/new-dashboard-widget
+    ```
+
+* **Ready for Next Task:** Your local repository is now clean and up-to-date, ready for the next feature or task (return to Step 1).
+
+---
