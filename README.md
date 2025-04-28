@@ -7,8 +7,26 @@
 [![AWS CCP](https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?logo=amazon-aws)](https://www.credly.com/org/amazon-web-services/badge/aws-certified-cloud-practitioner)
 [![GitHub](https://img.shields.io/badge/GitHub-BjornMelin-181717?logo=github)](https://github.com/BjornMelin)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bjorn%20Melin-0077B5?logo=linkedin)](https://www.linkedin.com/in/bjorn-melin/)
+[![Version](https://img.shields.io/badge/Version-1.2.0-blue)]()
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-April%202025-lightgrey)]()
 
-Expert-level prompt templates for modern software development using AI pair programming. Optimize your development workflow with carefully crafted prompts for everything from AWS Lambda functions to full-stack applications.
+Expert-level prompt templates for modern software development using AI pair programming. Optimize your development workflow with carefully crafted prompts for everything from AWS Lambda functions to full-stack applications and AI-powered workflow automation.
+
+## 📋 Table of Contents
+
+- [Features](#-features)
+- [Quick Links](#-quick-links)
+- [Getting Started](#-getting-started)
+- [Available Templates](#-available-templates)
+- [Example Usage](#-example-usage)
+- [AI Tools & Rules](#-ai-tools--rules)
+- [Contributing](#-contributing)
+- [Best Practices](#-best-practices)
+- [How to Cite](#-how-to-cite)
+- [License](#-license)
+- [Star History](#-star-history)
+- [Acknowledgments](#-acknowledgments)
+- [Author](#-author)
 
 ## 🌟 Features
 
@@ -18,12 +36,15 @@ Expert-level prompt templates for modern software development using AI pair prog
 - 🔒 **Security First**: Built-in security considerations for each template
 - 🚀 **Cloud Native**: Deep integration with modern cloud services
 - 📱 **Full Stack**: Coverage from frontend to backend to mobile
+- 🤖 **AI Development**: Optimized workflows for AI-assisted development
+- 🔄 **CI/CD**: Continuous integration and deployment templates
+- 💻 **IDE Integration**: Custom rules for AI coding assistants like Cursor
 
 ## 📚 Quick Links
 
 - [Getting Started](#-getting-started)
 - [Templates Library](./prompts/)
-- [Examples](./examples/)
+- [AI Tools & Rules](#-ai-tools--rules)
 - [Contributing](CONTRIBUTING.md)
 - [Best Practices](./docs/best-practices.md)
 
@@ -33,13 +54,18 @@ Expert-level prompt templates for modern software development using AI pair prog
 
    ```bash
    # Navigate to the relevant category
-   prompts/
-   ├── cloud/        # Cloud-specific prompts (AWS, Azure, GCP)
-   ├── frontend/     # Frontend development templates
-   ├── backend/      # Backend and API templates
-   ├── mobile/       # Mobile development prompts
-   ├── python/       # Reusable expert Python prompts
-   └── typescript/   # Reusable expert TypeScript Prompts - Next.js, React
+   prompts/             # Development prompts by category
+   ├── cloud/           # Cloud-specific prompts (AWS, Azure, GCP)
+   ├── frontend/        # Frontend development templates
+   ├── backend/         # Backend and API templates
+   ├── mobile/          # Mobile development prompts
+   ├── python/          # Reusable expert Python prompts
+   └── typescript/      # Reusable expert TypeScript Prompts
+   
+   rules/               # AI tool rules and automation
+   ├── cursor-ai-agent/ # Autonomous AI agent for Cursor
+   ├── cursorrules/     # Rules for Cursor AI coding assistant
+   └── copilot/         # GitHub Copilot optimization
    ```
 
 2. **Customize Your Prompt**
@@ -83,9 +109,24 @@ Expert-level prompt templates for modern software development using AI pair prog
 
 - [Expert-level Python Prompts](./prompts/python/)
 
-### TypeScript
+### TypeScript Development
 
 - [Expert TypeScript Prompts (Next.js, React)](./prompts/typescript/)
+
+### CI/CD & DevOps
+
+- [CI/CD Pipeline Templates](./prompts/cicd/)
+
+## 🛠️ AI Tools & Rules
+
+### Cursor AI
+
+- [Ultimate Cursor AI Agent Template](./rules/cursor-ai-agent/) - Autonomous AI development framework
+- [Git Feature Workflow](./rules/cursorrules/git_feature_workflow.mdc) - Conventional commits and branch workflow
+
+### GitHub Copilot
+
+- [Prompt Engineering Techniques](./rules/copilot/) - Optimize Copilot interactions
 
 ## 💡 Example Usage
 
@@ -97,7 +138,7 @@ I need to develop an AWS Lambda function for image processing with:
    - Memory allocation: 1024 MB
      ...
 
-[See full example in examples/lambda-image-processor.md]
+[See full example in docs/examples/lambda-image-processor.md]
 ```
 
 ## 🤝 Contributing
@@ -111,6 +152,7 @@ We accept:
 - 📚 Documentation updates
 - 💻 Example implementations
 - 🐛 Bug fixes
+- 🤖 AI tool configurations
 
 ## 📈 Best Practices
 
@@ -120,19 +162,35 @@ We accept:
 - Add examples where possible
 - Consider scalability and maintenance
 
+## 📚 How to Cite
+
+If you use these templates in your research or publications, please cite this repository:
+
+```bibtex
+@misc{melin2025aiprompts,
+  author = {Melin, Bjorn},
+  title = {AI-Powered Development Prompts},
+  year = {2025},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/BjornMelin/ai-powered-development-prompts}}
+}
+```
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🌟 Star History
+## 📈 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-powered-development-prompts&type=Date)](https://star-history.com/#yourusername/ai-powered-development-prompts&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=BjornMelin/ai-powered-development-prompts&type=Date)](https://star-history.com/#BjornMelin/ai-powered-development-prompts&Date)
 
 ## 🙏 Acknowledgments
 
 - All contributors who have helped improve these templates
 - The AI/ML community for valuable feedback
 - Open source projects that inspired this collection
+- [Bhartendu-Kumar/rules_template](https://github.com/Bhartendu-Kumar/rules_template) and [kleosr/cursorkleosr](https://github.com/kleosr/cursorkleosr) for inspiration on the Cursor AI Agent system
 
 ---
 
