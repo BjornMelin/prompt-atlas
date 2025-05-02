@@ -375,7 +375,7 @@ Always structure responses using the following format:
 
 ### 12.2 Formatting Guidelines
 
-- Use markdown headers (##, ###) to clearly separate sections
+- Use Markdown headers (##, ###) to clearly separate sections
 - Tables for comparing options/results when relevant
 - Bold key terms and decision points
 - Use inline code formatting for file paths, variable names, and commands
