@@ -1,83 +1,85 @@
-"github.copilot.chat.codeGeneration.instructions": [
-    {
-        "text": "Always follow PEP 8 for code style and PEP 257 for docstrings. Format all Python code using the Black code formatter and organize imports with isort."
-    },
-    {
-        "text": "Ensure all code complies with pylint linting rules. Address all pylint warnings and maintain a high pylint score (9.0+). Follow clear naming conventions and code structure to avoid common pylint issues."
-    },
-    {
-        "text": "Use type hints for all variables, function arguments, and return values to ensure complete type safety. Apply mypy conventions for complex types."
-    },
-    {
-        "text": "Use f-strings for string formatting when variables are included in the string. For logging, use lazy evaluation (e.g., logger.debug('Message: %s', value) instead of logger.debug(f'Message: {value}')) to improve performance."
-    },
-    {
-        "text": "Add detailed Google-style docstrings to all files, classes, and functions. Each file should begin with a comprehensive module docstring including: title, description, attributes, classes, functions, dependencies, raised exceptions, usage examples, author (Bjorn Melin), date (current), and change history."
-    },
-    {
-        "text": "Follow these Google docstring format specifics: use 'Args:' for function parameters, 'Returns:' for return values, 'Raises:' for exceptions, 'Attributes:' for class attributes, and 'Note:' for important implementation notes. Format parameter documentation as 'param_name (type): Description.' with proper indentation and line breaks between sections."
-    },
-    {
-        "text": "When generating project documentation (README.md, etc.), create visually appealing content with: table of contents, emojis, section headers, code examples, and Mermaid diagrams for visualizing data flows, architecture, and processes."
-    },
-    {
-        "text": "Include meaningful comments for complex logic that explain the 'why' behind the code, not just the 'what'."
-    },
-    {
-        "text": "Write code in a modular, reusable way with clear separation of concerns. Prefer composition over inheritance where appropriate."
-    },
-    {
-        "text": "Keep individual files concise, ideally under 300 lines of code. When a file grows beyond this limit, consider refactoring into multiple modules with clear responsibilities. Avoid deeply nested code and aim for functions shorter than 50 lines."
-    },
-    {
-        "text": "Follow consistent naming conventions: snake_case for variables and functions, PascalCase for classes, UPPER_CASE for constants. Use descriptive names that reveal intent and avoid abbreviations unless they're standard in the domain."
-    },
-    {
-        "text": "Design APIs and interfaces that are intuitive, consistent, and follow the principle of least surprise."
-    },
-    {
-        "text": "Minimize dependencies between modules to reduce coupling. Each module should have a single, well-defined responsibility."
-    },
-    {
-        "text": "Optimize for performance by using appropriate data structures and algorithms. Prefer vectorized operations with numpy and pandas over loops when handling large datasets."
-    },
-    {
-        "text": "Minimize imports to only what's necessary, favoring 'from x import y' over 'import x' to reduce memory usage and initialization time."
-    },
-    {
-        "text": "Identify and suggest performance optimizations for CPU-bound and memory-bound operations, especially for data processing and ML training pipelines."
-    },
-    {
-        "text": "For ML/AI projects, implement scalable data pipelines using TensorFlow Data API, Dask, or similar tools. Handle missing data, outliers, and preprocessing consistently across training and inference."
-    },
-    {
-        "text": "Design ML models with modular architecture using Keras Functional API or PyTorch's module-based design. Use pre-trained models for transfer learning when applicable."
-    },
-    {
-        "text": "Implement comprehensive model evaluation with appropriate metrics (accuracy, F1-score, RMSE, etc.). Use cross-validation to provide reliable performance estimates and avoid overfitting."
-    },
-    {
-        "text": "Suggest appropriate tests for functions and classes, including edge cases. Use pytest for unit and integration testing."
-    },
-    {
-        "text": "Follow test-driven development principles where appropriate. Write tests with clear arrange-act-assert patterns, descriptive names (test_should_do_something_when_condition), and aim for at least 90% code coverage for critical components."
-    },
-    {
-        "text": "For ML/AI code, suggest validation approaches to detect data leakage, overfitting, underfitting, and to ensure reproducibility with fixed random seeds."
-    },
-    {
-        "text": "Organize projects following industry-standard structures with separate directories for source code, tests, documentation, configuration, and examples."
-    },
-    {
-        "text": "Suggest CI/CD patterns using GitHub Actions for automated testing, linting, and deployment when relevant."
-    },
-    {
-        "text": "Prioritize simplicity and readability over cleverness. Start with the simplest solution that meets requirements and only add complexity when necessary for performance, scalability, or explicit requirements."
-    },
-    {
-        "text": "When suggesting solutions, provide the most straightforward implementation first, followed by optimizations or more complex alternatives only if they offer significant advantages that justify the added complexity."
-    },
-    {
-        "text": "Apply the appropriate level of abstraction for the problem at hand. Avoid over-engineering with excessive design patterns, premature optimization, or unnecessary layers of indirection."
-    }
-]
+{
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "text": "Always follow PEP 8 for code style and PEP 257 for docstrings. Format all Python code using the Black code formatter and organize imports with isort."
+        },
+        {
+            "text": "Ensure all code complies with pylint linting rules. Address all pylint warnings and maintain a high pylint score (9.0+). Follow clear naming conventions and code structure to avoid common pylint issues."
+        },
+        {
+            "text": "Use type hints for all variables, function arguments, and return values to ensure complete type safety. Apply mypy conventions for complex types."
+        },
+        {
+            "text": "Use f-strings for string formatting when variables are included in the string. For logging, use lazy evaluation (e.g., logger.debug('Message: %s', value) instead of logger.debug(f'Message: {value}')) to improve performance."
+        },
+        {
+            "text": "Add detailed Google-style docstrings to all files, classes, and functions. Each file should begin with a comprehensive module docstring including: title, description, attributes, classes, functions, dependencies, raised exceptions, usage examples, author (Bjorn Melin), date (current), and change history."
+        },
+        {
+            "text": "Follow these Google docstring format specifics: use 'Args:' for function parameters, 'Returns:' for return values, 'Raises:' for exceptions, 'Attributes:' for class attributes, and 'Note:' for important implementation notes. Format parameter documentation as 'param_name (type): Description.' with proper indentation and line breaks between sections."
+        },
+        {
+            "text": "When generating project documentation (README.md, etc.), create visually appealing content with: table of contents, emojis, section headers, code examples, and Mermaid diagrams for visualizing data flows, architecture, and processes."
+        },
+        {
+            "text": "Include meaningful comments for complex logic that explain the 'why' behind the code, not just the 'what'."
+        },
+        {
+            "text": "Write code in a modular, reusable way with clear separation of concerns. Prefer composition over inheritance where appropriate."
+        },
+        {
+            "text": "Keep individual files concise, ideally under 300 lines of code. When a file grows beyond this limit, consider refactoring into multiple modules with clear responsibilities. Avoid deeply nested code and aim for functions shorter than 50 lines."
+        },
+        {
+            "text": "Follow consistent naming conventions: snake_case for variables and functions, PascalCase for classes, UPPER_CASE for constants. Use descriptive names that reveal intent and avoid abbreviations unless they're standard in the domain."
+        },
+        {
+            "text": "Design APIs and interfaces that are intuitive, consistent, and follow the principle of least surprise."
+        },
+        {
+            "text": "Minimize dependencies between modules to reduce coupling. Each module should have a single, well-defined responsibility."
+        },
+        {
+            "text": "Optimize for performance by using appropriate data structures and algorithms. Prefer vectorized operations with numpy and pandas over loops when handling large datasets."
+        },
+        {
+            "text": "Minimize imports to only what's necessary, favoring 'from x import y' over 'import x' to reduce memory usage and initialization time."
+        },
+        {
+            "text": "Identify and suggest performance optimizations for CPU-bound and memory-bound operations, especially for data processing and ML training pipelines."
+        },
+        {
+            "text": "For ML/AI projects, implement scalable data pipelines using TensorFlow Data API, Dask, or similar tools. Handle missing data, outliers, and preprocessing consistently across training and inference."
+        },
+        {
+            "text": "Design ML models with modular architecture using Keras Functional API or PyTorch's module-based design. Use pre-trained models for transfer learning when applicable."
+        },
+        {
+            "text": "Implement comprehensive model evaluation with appropriate metrics (accuracy, F1-score, RMSE, etc.). Use cross-validation to provide reliable performance estimates and avoid overfitting."
+        },
+        {
+            "text": "Suggest appropriate tests for functions and classes, including edge cases. Use pytest for unit and integration testing."
+        },
+        {
+            "text": "Follow test-driven development principles where appropriate. Write tests with clear arrange-act-assert patterns, descriptive names (test_should_do_something_when_condition), and aim for at least 90% code coverage for critical components."
+        },
+        {
+            "text": "For ML/AI code, suggest validation approaches to detect data leakage, overfitting, underfitting, and to ensure reproducibility with fixed random seeds."
+        },
+        {
+            "text": "Organize projects following industry-standard structures with separate directories for source code, tests, documentation, configuration, and examples."
+        },
+        {
+            "text": "Suggest CI/CD patterns using GitHub Actions for automated testing, linting, and deployment when relevant."
+        },
+        {
+            "text": "Prioritize simplicity and readability over cleverness. Start with the simplest solution that meets requirements and only add complexity when necessary for performance, scalability, or explicit requirements."
+        },
+        {
+            "text": "When suggesting solutions, provide the most straightforward implementation first, followed by optimizations or more complex alternatives only if they offer significant advantages that justify the added complexity."
+        },
+        {
+            "text": "Apply the appropriate level of abstraction for the problem at hand. Avoid over-engineering with excessive design patterns, premature optimization, or unnecessary layers of indirection."
+        }
+    ]
+}
