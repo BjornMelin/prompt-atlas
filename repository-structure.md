@@ -1,7 +1,7 @@
 # Repository Structure
 
 ```plaintext
-ai-powered-development-prompts/
+prompt-atlas/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.md               # Template for bug reports
@@ -17,34 +17,56 @@ ai-powered-development-prompts/
 │   └── examples/
 │       └── lambda-image-processor.md   # Example implementation
 │
+├── guides/
+│   └── getting-started.md              # Getting started guide
+│
 ├── prompts/
-│   ├── cloud/
-│   │   ├── aws-lambda.md               # AWS Lambda development prompts
-│   │   ├── serverless.md               # Serverless architecture prompts
-│   │   └── architecture.md             # Cloud architecture design prompts
+│   ├── domains/                        # Domain-specific prompts
+│   │   ├── cloud/                      # Cloud development
+│   │   │   ├── aws-lambda.md
+│   │   │   ├── serverless.md
+│   │   │   └── architecture.md
+│   │   ├── frontend/                   # Frontend development
+│   │   │   ├── react.md
+│   │   │   ├── components.md
+│   │   │   └── performance.md
+│   │   ├── backend/                    # Backend development
+│   │   │   ├── api.md
+│   │   │   ├── database.md
+│   │   │   └── microservices.md
+│   │   ├── mobile/                     # Mobile development
+│   │   │   ├── react-native.md
+│   │   │   ├── flutter.md
+│   │   │   └── native.md
+│   │   └── devops/                     # CI/CD & infrastructure
+│   │       └── cicd-and-cloud-integration.md
 │   │
-│   ├── frontend/
-│   │   ├── react.md                    # React development prompts
-│   │   ├── performance.md              # Frontend performance optimization
-│   │   └── components.md               # Component design patterns
+│   ├── languages/                      # Language-specific prompts
+│   │   ├── python/                     # Python development
+│   │   │   ├── python-ai-ml-expert.md
+│   │   │   ├── python-simple-optimal-code-prompt.md
+│   │   │   └── seasoned-expert-python-ai-ml-swe.md
+│   │   ├── typescript/                 # TypeScript development
+│   │   │   └── nextjs-expert-dev.md
+│   │   └── README.md                   # Overview of language-specific prompts
 │   │
-│   ├── backend/
-│   │   ├── api.md                      # API development prompts
-│   │   ├── database.md                 # Database design prompts
-│   │   └── microservices.md            # Microservices architecture prompts
-│   │
-│   ├── mobile/
-│   │   ├── react-native.md             # React Native development
-│   │   ├── flutter.md                  # Flutter development
-│   │   └── native.md                   # Native mobile development
-│   │
-│   ├── python/                         # Python-specific prompts
-│   ├── typescript/                     # TypeScript-specific prompts
-│   ├── prompt-engineering/             # Prompt engineering guides
-│   └── cicd/                           # CI/CD pipeline templates
+│   └── patterns/                       # Common prompt patterns
+│       ├── architecture/               # Design patterns
+│       ├── optimization/               # Performance patterns
+│       ├── testing/                    # Testing patterns
+│       └── README.md                   # Overview of prompt patterns
+│
+├── tools/                              # AI assistant configurations
+│   ├── cursor/                         # Cursor AI rules
+│   │   └── agent/                      # Autonomous AI agent framework
+│   │       └── system_prompt.md
+│   ├── chat-models/                    # ChatGPT, Claude, etc.
+│   │   └── prompt-engineering/         # Prompt engineering guides
+│   │       └── master-prompt-generator.md
+│   └── README.md                       # Overview of tools
 │
 ├── rules/
-│   ├── cursor-ai-agent/                # Autonomous Cursor AI agent framework
+│   ├── cursor-ai-agent/                # Cursor AI Agent framework
 │   │   ├── README.md                   # Overview and instructions
 │   │   ├── system_prompt.md            # System prompt for Cursor AI
 │   │   ├── project_config.md           # Long-term memory template
@@ -54,6 +76,15 @@ ai-powered-development-prompts/
 │   │   └── git_feature_workflow.mdc    # Git feature branch workflow rules
 │   │
 │   └── copilot/                        # GitHub Copilot optimization
+│       ├── instructions/               # Copilot instructions
+│       │   ├── chat-agent-mcp-code-instruct-py_2025_05_02.json
+│       │   └── chat-codegen-instruct-py_2025_03_13.json
+│       └── prompts/                    # Copilot prompts
+│           └── mcp-agent-template.prompt.md
+│
+├── templates/                          # Standardized formats
+│   └── prompt-templates/               # Base templates for different categories
+│       └── standard-prompt.md          # Standard prompt template
 │
 ├── CONTRIBUTING.md                     # Contribution guidelines
 ├── LICENSE                             # MIT License
@@ -65,14 +96,14 @@ ai-powered-development-prompts/
 
 1. **README.md**
 
-   - Project overview
-   - AWS certification badges
-   - Features and capabilities
-   - Quick start guide
-   - Template categories
-   - Author information
-   - Contribution links
-   - Citation information
+   - Project overview with badges
+   - Feature highlights
+   - Repository structure diagram
+   - Prompt categories
+   - Usage instructions
+   - Contribution guidelines
+   - License information
+   - Author details
 
 2. **CONTRIBUTING.md**
 
@@ -100,23 +131,25 @@ ai-powered-development-prompts/
    - Common patterns
    - Success strategies
 
-5. **prompts/cloud/aws-lambda.md**
-
-   ````markdown
-   # AWS Lambda Development Prompts
-
-   ## Function Development Template
+5. **prompts/domains/cloud/aws-lambda.md**
 
    ```markdown
-   I need to develop an AWS Lambda function for [use case] with:
+   # AWS Lambda Development Prompts
 
-   1. Function Specifications:
-      - Runtime: [Python/Node.js/Java/etc]
-      # ... rest of template
+   ## Description
+
+   A collection of prompts for AWS Lambda function development.
+
+   ## Use Cases
+
+   - Serverless function development
+   - Event-driven architectures
+   - Cloud integration
+
+   # ... rest of content
    ```
-   ````
 
-6. **rules/cursor-ai-agent/system_prompt.md**
+6. **tools/cursor/agent/system_prompt.md**
 
    ```markdown
    # Cursor AI Agent System Prompt
@@ -125,7 +158,7 @@ ai-powered-development-prompts/
 
    1. project_config.md (Long-Term Memory): Contains stable project information...
    2. workflow_state.md (Short-Term Memory + Rules + Log): Contains dynamic information...
-   
+
    # ... rest of system prompt
    ```
 
@@ -137,6 +170,24 @@ ai-powered-development-prompts/
    ## Guiding Principle: Conventional Commits
 
    **All Git operations MUST adhere to the Conventional Commits specification.**
-   
+
    # ... rest of workflow rules
+   ```
+
+8. **templates/prompt-templates/standard-prompt.md**
+
+   ```markdown
+   # [Prompt Title]
+
+   ## Description
+
+   A brief description of what this prompt helps accomplish.
+
+   ## Use Cases
+
+   - Primary use case 1
+   - Primary use case 2
+   - Primary use case 3
+
+   # ... rest of template structure
    ```

@@ -6,16 +6,18 @@
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Files Included](#-files-included)
-- [Core System Structure](#-core-system-structure)
-- [Autonomous Loop Workflow](#-autonomous-loop-workflow)
-- [Phase-Based Development](#-phase-based-development)
-- [Implementation Instructions](#-implementation-instructions)
-- [Best Practices](#-best-practices)
-- [Use Cases](#-use-cases)
-- [Contributing](#-contributing)
+- [🤖 Ultimate Cursor AI Agent Prompt Template](#-ultimate-cursor-ai-agent-prompt-template)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🔍 Overview](#-overview)
+  - [✨ Key Features](#-key-features)
+  - [📁 Files Included](#-files-included)
+  - [🏗️ Core System Structure](#️-core-system-structure)
+  - [🔄 Autonomous Loop Workflow](#-autonomous-loop-workflow)
+  - [📊 Phase-Based Development](#-phase-based-development)
+  - [📋 Implementation Instructions](#-implementation-instructions)
+  - [🌟 Best Practices](#-best-practices)
+  - [💼 Use Cases](#-use-cases)
+  - [🤝 Contributing](#-contributing)
 
 ## 🔍 Overview
 
@@ -61,9 +63,10 @@ graph TD
 ```
 
 1. **`project_config.md`** - Long-Term Memory (LTM)
+
    - Contains stable project information
    - Defines project goals, tech stack, architecture, and standards
-   - Serves as the project's "constitution" 
+   - Serves as the project's "constitution"
    - Updated infrequently
 
 2. **`workflow_state.md`** - Short-Term Memory (STM) + Rules + Log
@@ -113,20 +116,24 @@ graph LR
 To implement this template in your project:
 
 1. **Create File Structure**:
+
    - Create a `.cursor` directory in your project root
    - Inside `.cursor`, create a `rules` directory
    - Create the two files: `project_config.md` and `workflow_state.md`
 
 2. **Configure Files**:
+
    - Fill in `project_config.md` with your project-specific details
    - Initialize `workflow_state.md` with the template structure
 
 3. **Setup MCP Tools** (Optional but recommended):
+
    - Connect Sequential Thinking MCP for complex reasoning
    - Connect search tools for external information gathering
    - Configure any other MCP tools you need
 
 4. **Start Your Cursor Session**:
+
    - Copy the System Prompt into your Cursor chat
    - Reference both files in your initial instruction
 

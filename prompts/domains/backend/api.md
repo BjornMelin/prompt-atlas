@@ -2,11 +2,21 @@
 
 ## Table of Contents
 
-- [REST API Design](#rest-api-design)
-- [GraphQL API Design](#graphql-api-design)
-- [API Security](#api-security)
-- [Performance Optimization](#performance-optimization)
-- [Examples](#examples)
+- [API Development Prompts](#api-development-prompts)
+  - [Table of Contents](#table-of-contents)
+  - [REST API Design](#rest-api-design)
+    - [Basic REST API](#basic-rest-api)
+    - [API Versioning](#api-versioning)
+  - [GraphQL API Design](#graphql-api-design)
+    - [GraphQL Schema](#graphql-schema)
+  - [API Security](#api-security)
+    - [Security Implementation](#security-implementation)
+  - [Performance Optimization](#performance-optimization)
+    - [API Optimization](#api-optimization)
+  - [Examples](#examples)
+    - [E-commerce API](#e-commerce-api)
+    - [Analytics API](#analytics-api)
+  - [Best Practices](#best-practices)
 
 ## REST API Design
 
