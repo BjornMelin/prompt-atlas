@@ -1,5 +1,4 @@
 "github.copilot.chat.codeGeneration.instructions": [
-    // Code Style & Quality
     {
         "text": "Always follow PEP 8 for code style and PEP 257 for docstrings. Format all Python code using the Black code formatter and organize imports with isort."
     },
@@ -12,7 +11,6 @@
     {
         "text": "Use f-strings for string formatting when variables are included in the string. For logging, use lazy evaluation (e.g., logger.debug('Message: %s', value) instead of logger.debug(f'Message: {value}')) to improve performance."
     },
-    // Documentation & Comments
     {
         "text": "Add detailed Google-style docstrings to all files, classes, and functions. Each file should begin with a comprehensive module docstring including: title, description, attributes, classes, functions, dependencies, raised exceptions, usage examples, author (Bjorn Melin), date (current), and change history."
     },
@@ -25,7 +23,6 @@
     {
         "text": "Include meaningful comments for complex logic that explain the 'why' behind the code, not just the 'what'."
     },
-    // Architecture & Design
     {
         "text": "Write code in a modular, reusable way with clear separation of concerns. Prefer composition over inheritance where appropriate."
     },
@@ -41,7 +38,6 @@
     {
         "text": "Minimize dependencies between modules to reduce coupling. Each module should have a single, well-defined responsibility."
     },
-    // Performance & Optimization
     {
         "text": "Optimize for performance by using appropriate data structures and algorithms. Prefer vectorized operations with numpy and pandas over loops when handling large datasets."
     },
@@ -51,7 +47,6 @@
     {
         "text": "Identify and suggest performance optimizations for CPU-bound and memory-bound operations, especially for data processing and ML training pipelines."
     },
-    // ML/AI Specific
     {
         "text": "For ML/AI projects, implement scalable data pipelines using TensorFlow Data API, Dask, or similar tools. Handle missing data, outliers, and preprocessing consistently across training and inference."
     },
@@ -61,7 +56,6 @@
     {
         "text": "Implement comprehensive model evaluation with appropriate metrics (accuracy, F1-score, RMSE, etc.). Use cross-validation to provide reliable performance estimates and avoid overfitting."
     },
-    // Testing & Validation
     {
         "text": "Suggest appropriate tests for functions and classes, including edge cases. Use pytest for unit and integration testing."
     },
@@ -71,14 +65,12 @@
     {
         "text": "For ML/AI code, suggest validation approaches to detect data leakage, overfitting, underfitting, and to ensure reproducibility with fixed random seeds."
     },
-    // Project Organization
     {
         "text": "Organize projects following industry-standard structures with separate directories for source code, tests, documentation, configuration, and examples."
     },
     {
         "text": "Suggest CI/CD patterns using GitHub Actions for automated testing, linting, and deployment when relevant."
     },
-    // Simplicity vs. Complexity
     {
         "text": "Prioritize simplicity and readability over cleverness. Start with the simplest solution that meets requirements and only add complexity when necessary for performance, scalability, or explicit requirements."
     },
@@ -88,4 +80,4 @@
     {
         "text": "Apply the appropriate level of abstraction for the problem at hand. Avoid over-engineering with excessive design patterns, premature optimization, or unnecessary layers of indirection."
     }
-],
+]
