@@ -15,7 +15,7 @@ This file contains the dynamic state of the project workflow, including current 
 1. [Step 1]
 2. [Step 2]
 3. [Step 3]
-...
+   ...
 
 ## Rules
 
@@ -87,16 +87,16 @@ YYYY-MM-DD HH:MM - [Action/Decision/Observation]
 
 ## Items
 
-| Item ID | Text to Process |
-|---------|----------------|
+| Item ID | Text to Process   |
+| ------- | ----------------- |
 | item1   | [Text for item 1] |
 | item2   | [Text for item 2] |
-| ...     | ... |
+| ...     | ...               |
 
 ## TokenizationResults
 
-| Item ID | Summary | Token Count |
-|---------|---------|------------|
-| item1   | [Summary of item 1] | [Count] |
-| item2   | [Summary of item 2] | [Count] |
-| ...     | ... | ... |
+| Item ID | Summary             | Token Count |
+| ------- | ------------------- | ----------- |
+| item1   | [Summary of item 1] | [Count]     |
+| item2   | [Summary of item 2] | [Count]     |
+| ...     | ...                 | ...         |

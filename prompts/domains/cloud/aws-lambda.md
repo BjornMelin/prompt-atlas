@@ -1,68 +1,245 @@
-# AWS Lambda Function Development
+# AWS Lambda Development Prompts
 
-## Description
-This prompt template helps you design and implement AWS Lambda functions with best practices for various use cases, including data processing, API backends, and event-driven workflows.
+## Table of Contents
 
-## Use Cases
-- Serverless API backends
-- Data transformation and ETL processes
-- Event-driven architectures
-- Scheduled tasks and cron jobs
-- Real-time file processing
+- [Function Development](#function-development)
+- [Event Processing](#event-processing-function)
+- [Integration Patterns](#integration-patterns)
+- [Optimization](#optimization)
+- [Examples](#examples)
 
-## Parameters
-- `[RUNTIME]`: Programming language runtime (Python, Node.js, Java, etc.)
-- `[MEMORY]`: Memory allocation in MB (128MB to 10GB)
-- `[TIMEOUT]`: Execution timeout in seconds (1-900s)
-- `[EVENT_SOURCE]`: Trigger for the Lambda (S3, API Gateway, EventBridge, etc.)
-- `[INTEGRATION_POINTS]`: External services the Lambda will interact with
+## Function Development
 
-## Example Usage
+### Basic Lambda Function
 
 ```markdown
-I need to develop an AWS Lambda function for image processing with:
+I need to develop an AWS Lambda function for [use case] with:
 
 1. Function Specifications:
-   - Runtime: [RUNTIME] (e.g., Python 3.11)
-   - Memory: [MEMORY] (e.g., 1024 MB)
-   - Timeout: [TIMEOUT] (e.g., 30 seconds)
-   - Concurrency limits: [CONCURRENCY] (e.g., 100)
+
+   - Runtime: [Python/Node.js/Java/etc]
+   - Memory allocation: [MB]
+   - Timeout settings: [seconds]
+   - Concurrency limits: [number]
+   - VPC requirements: [Yes/No]
 
 2. Event Sources:
-   - Trigger type: [EVENT_SOURCE] (e.g., S3 bucket upload)
-   - Event pattern: [PATTERN] (e.g., *.jpg, *.png)
-   - Error handling: [ERROR_STRATEGY] (e.g., DLQ for failed processing)
 
-3. Integration Points:
-   - [INTEGRATION_POINTS] (e.g., S3 for storage, DynamoDB for metadata)
-   - Authentication requirements: [AUTH_REQUIREMENTS]
-   - Network configuration: [NETWORK_CONFIG] (e.g., VPC requirements)
+   - Trigger type: [API Gateway/S3/EventBridge/etc]
+   - Event schema
+   - Event filtering patterns
+   - Dead letter queue strategy
+
+3. Integration Requirements:
+
+   - AWS Services: [list required services]
+   - External APIs
+   - Database connections
+   - Shared resources
 
 4. Development Workflow:
-   - Testing approach: [TESTING_STRATEGY]
-   - Deployment method: [DEPLOYMENT_METHOD] (e.g., SAM, Serverless Framework)
-   - CI/CD integration: [CICD_PIPELINE]
+   - Local testing approach
+   - CI/CD integration
+   - Deployment strategy
+   - Version management
 
-Focus area: [SPECIFIC_FUNCTIONALITY] (e.g., image resize operation)
+Focus area: [specific functionality]
 ```
 
-## Expected Output
-The AI assistant should provide a comprehensive solution including:
+### Event Processing Function
 
-1. Lambda function code implementing the requested functionality
-2. Infrastructure as Code (IaC) for deployment (e.g., SAM template, Serverless Framework)
-3. IAM permissions and policies 
-4. Error handling and logging implementation
-5. Testing approach and examples
-6. Deployment instructions
+```markdown
+I need to develop an event processing Lambda with:
 
-## Customization Guide
-- For simpler functions, you can omit concurrency limits and CI/CD integration
-- Add specific performance requirements if critical
-- Include specific AWS region if required
-- For VPC-connected Lambdas, specify subnet and security group requirements
-- For third-party integrations, specify authentication and endpoint details
+1. Event Specifications:
 
-## Version
-- Current Version: 1.0
-- Last Updated: 2025-05-07
+   - Source service: [SQS/SNS/EventBridge/etc]
+   - Message format: [JSON/XML/Binary]
+   - Processing requirements
+   - Error handling strategy
+
+2. Performance Requirements:
+
+   - Batch size: [number of events]
+   - Processing time limits
+   - Concurrent executions
+   - Resource constraints
+
+3. Resilience Patterns:
+   - Retry strategy
+   - DLQ configuration
+   - Circuit breaker patterns
+   - Fallback mechanisms
+
+Current focus: [specific processing step]
+```
+
+## Integration Patterns
+
+### API Integration
+
+```markdown
+I need to integrate Lambda with API Gateway:
+
+1. API Specifications:
+
+   - HTTP methods: [GET/POST/etc]
+   - Authorization: [IAM/Cognito/Custom]
+   - Request/Response models
+   - CORS configuration
+
+2. Integration Type:
+
+   - Proxy integration
+   - Custom integration
+   - VPC link requirements
+   - Direct integrations
+
+3. Security Requirements:
+   - Authentication method
+   - Authorization scopes
+   - API key usage
+   - WAF integration
+```
+
+### Database Integration
+
+```markdown
+I need to integrate Lambda with [database]:
+
+1. Connection Requirements:
+
+   - Connection pooling
+   - Credential management
+   - VPC configuration
+   - Timeout handling
+
+2. Query Patterns:
+
+   - CRUD operations
+   - Batch processing
+   - Transaction management
+   - Error handling
+
+3. Performance Optimization:
+   - Connection reuse
+   - Query optimization
+   - Cache strategy
+   - Resource management
+```
+
+## Optimization
+
+### Performance Optimization
+
+```markdown
+Help me optimize Lambda function [name] for:
+
+1. Current Metrics:
+
+   - Average duration: [ms]
+   - Memory usage: [MB]
+   - Cold start frequency
+   - Error rate: [%]
+
+2. Target Improvements:
+
+   - Response time goals
+   - Memory utilization
+   - Cost reduction
+   - Reliability targets
+
+3. Optimization Areas:
+   - Code efficiency
+   - Memory allocation
+   - Dependency management
+   - Connection handling
+```
+
+## Examples
+
+### REST API Lambda
+
+```markdown
+I need to develop a REST API Lambda for user management:
+
+1. Function Specifications:
+
+   - Runtime: Node.js 18
+   - Memory: 512 MB
+   - Timeout: 10 seconds
+   - Concurrency: 50
+
+2. API Endpoints:
+
+   - GET /users
+   - POST /users
+   - PUT /users/{id}
+   - DELETE /users/{id}
+
+3. Integration Points:
+   - DynamoDB for user data
+   - Cognito for authentication
+   - SES for notifications
+   - S3 for user uploads
+
+Focus: User creation endpoint
+```
+
+### Event Processing Example
+
+```markdown
+I need an event processing Lambda for order processing:
+
+1. Event Source:
+
+   - SQS FIFO queue
+   - Order events in JSON
+   - 100 messages per batch
+   - 5-minute timeout
+
+2. Processing Steps:
+
+   - Validate order data
+   - Update inventory
+   - Process payment
+   - Send confirmation
+
+3. Integration Points:
+   - DynamoDB for orders
+   - Payment gateway API
+   - SNS for notifications
+   - EventBridge for workflow
+
+Focus: Payment processing step
+```
+
+## Best Practices
+
+1. **Function Design**
+
+   - Single responsibility
+   - Stateless operation
+   - Idempotent processing
+   - Proper error handling
+
+2. **Performance**
+
+   - Optimize memory
+   - Manage cold starts
+   - Connection pooling
+   - Efficient logging
+
+3. **Security**
+
+   - Least privilege IAM
+   - Secret management
+   - Input validation
+   - Output sanitization
+
+4. **Monitoring**
+
+   - CloudWatch metrics
+   - Custom metrics
+   - Tracing with X-Ray
+   - Log aggregation

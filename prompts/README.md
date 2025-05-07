@@ -5,6 +5,7 @@ This directory contains all the prompt templates organized by category to help y
 ## Directory Structure
 
 - **domains/** - Domain-specific prompts
+
   - **cloud/** - Cloud development (AWS, serverless, architecture)
   - **frontend/** - Frontend development (React, components, performance)
   - **backend/** - Backend development (APIs, databases, microservices)
@@ -12,6 +13,7 @@ This directory contains all the prompt templates organized by category to help y
   - **devops/** - CI/CD and infrastructure
 
 - **languages/** - Language-specific prompts
+
   - **python/** - Python development
   - **typescript/** - TypeScript development
   - **other/** - Additional languages
