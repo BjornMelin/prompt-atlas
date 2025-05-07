@@ -4,12 +4,22 @@ Welcome to PromptAtlas! This guide will help you quickly navigate and use the re
 
 ## Table of Contents
 
-- [Understanding PromptAtlas](#understanding-promptatlas)
-- [Finding the Right Prompt](#finding-the-right-prompt)
-- [Customizing Prompts](#customizing-prompts)
-- [Using AI Tool Configurations](#using-ai-tool-configurations)
-- [Contributing](#contributing)
-- [Advanced Usage](#advanced-usage)
+- [Getting Started with PromptAtlas](#getting-started-with-promptatlas)
+  - [Table of Contents](#table-of-contents)
+  - [Understanding PromptAtlas](#understanding-promptatlas)
+  - [Finding the Right Prompt](#finding-the-right-prompt)
+    - [By Domain](#by-domain)
+    - [By Language](#by-language)
+    - [By Pattern](#by-pattern)
+  - [Customizing Prompts](#customizing-prompts)
+    - [Example](#example)
+  - [Using AI Tool Configurations](#using-ai-tool-configurations)
+    - [Cursor AI](#cursor-ai)
+    - [GitHub Copilot](#github-copilot)
+  - [Contributing](#contributing)
+  - [Advanced Usage](#advanced-usage)
+    - [Combining Prompts](#combining-prompts)
+    - [Creating Custom Templates](#creating-custom-templates)
 
 ## Understanding PromptAtlas
 
@@ -60,16 +70,20 @@ Each prompt template includes parameters enclosed in square brackets (e.g., `[PA
 ### Example
 
 Original template section:
+
 ```markdown
 Function Specifications:
+
 - Runtime: [RUNTIME]
 - Memory: [MEMORY]
 - Timeout: [TIMEOUT]
 ```
 
 Customized section:
+
 ```markdown
 Function Specifications:
+
 - Runtime: Python 3.11
 - Memory: 1024 MB
 - Timeout: 30 seconds

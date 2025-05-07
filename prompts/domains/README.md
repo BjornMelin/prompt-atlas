@@ -1,32 +1,65 @@
-# Domain-Specific Prompts
+# 🌐 Domain-Specific Prompts
 
-This directory contains prompt templates organized by technical domain to help you with specific development areas.
+A curated collection of prompts organized by development domain, allowing you to quickly find templates tailored to specific areas of software development.
 
-## Available Domains
+## 📋 Table of Contents
 
-- **cloud/** - Cloud development and serverless architecture
-  - AWS Lambda functions
-  - Serverless applications
-  - Cloud architecture design
+- [🌐 Domain-Specific Prompts](#-domain-specific-prompts)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🏢 Available Domains](#-available-domains)
+  - [📂 Organization](#-organization)
+  - [🛠️ Usage Flow](#️-usage-flow)
+  - [🤝 Contributing](#-contributing)
 
-- **frontend/** - Frontend development
-  - React applications
-  - Performance optimization
-  - Component architecture
+## 🏢 Available Domains
 
-- **backend/** - Backend development
-  - API design
-  - Database optimization
-  - Microservices architecture
+- ☁️ **Cloud**: AWS Lambda, serverless architecture, cloud infrastructure design
+- 🖥️ **Frontend**: React, components, performance optimization
+- 🔌 **Backend**: APIs, databases, microservices
+- 📱 **Mobile**: React Native, Flutter, native app development
+- 🔄 **DevOps**: CI/CD, deployment automation, infrastructure as code
 
-- **mobile/** - Mobile application development
-  - React Native
-  - Flutter
-  - Native iOS/Android
+## 📂 Organization
 
-- **devops/** - DevOps and CI/CD
-  - CI/CD pipelines
-  - Deployment automation
-  - Infrastructure as Code
+Each domain subdirectory contains prompts specifically crafted for that area of development, with considerations for:
 
-Each prompt follows our standardized format to ensure consistency and ease of use.
+1. Domain-specific best practices
+2. Common frameworks and technologies
+3. Architecture patterns
+4. Performance considerations
+5. Security requirements
+
+## 🛠️ Usage Flow
+
+The domain-specific prompt selection and usage process is illustrated below:
+
+```mermaid
+graph TD
+    A[Identify Development Need] --> B[Select Domain]
+    B --> C{Domain Type}
+    C -->|Web Frontend| D[Frontend Prompts]
+    C -->|Server-side| E[Backend Prompts]
+    C -->|Infrastructure| F[Cloud Prompts]
+    C -->|App Development| G[Mobile Prompts]
+    C -->|Automation| H[DevOps Prompts]
+
+    D --> I[Select Specific Prompt]
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+
+    I --> J[Customize Parameters]
+    J --> K[Apply with AI Assistant]
+    K --> L[Review & Refine]
+```
+
+## 🤝 Contributing
+
+When adding new domain-specific prompts, please:
+
+1. Use the standardized prompt template
+2. Include domain-specific examples
+3. Reference relevant technologies and frameworks
+4. Consider scalability, performance, and security aspects
+5. Add appropriate emojis and formatting for visual appeal

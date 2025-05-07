@@ -2,11 +2,21 @@
 
 ## Table of Contents
 
-- [Component Design](#component-design)
-- [Pattern Library](#pattern-library)
-- [Component Testing](#component-testing)
-- [State Management](#state-management)
-- [Examples](#examples)
+- [Component Architecture and Design Prompts](#component-architecture-and-design-prompts)
+  - [Table of Contents](#table-of-contents)
+  - [Component Design](#component-design)
+    - [Component Architecture](#component-architecture)
+    - [Component Library](#component-library)
+  - [Pattern Library](#pattern-library)
+    - [Design System](#design-system)
+  - [Component Testing](#component-testing)
+    - [Testing Strategy](#testing-strategy)
+  - [State Management](#state-management)
+    - [Component State](#component-state)
+  - [Examples](#examples)
+    - [Form Components](#form-components)
+    - [Data Display Components](#data-display-components)
+  - [Best Practices](#best-practices)
 
 ## Component Design
 

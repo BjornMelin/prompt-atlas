@@ -1,12 +1,14 @@
 # 🚀 PromptAtlas - AI Development Prompt Navigator
 
 <!-- Project Status -->
+
 [![MIT License](https://img.shields.io/github/license/BjornMelin/prompt-atlas?color=green)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/BjornMelin/prompt-atlas?label=release)](https://github.com/BjornMelin/prompt-atlas/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/BjornMelin/prompt-atlas?color=blue)](https://github.com/BjornMelin/prompt-atlas/commits)
 [![CI](https://img.shields.io/github/actions/workflow/status/BjornMelin/prompt-atlas/markdown-lint.yml?label=CI&logo=github)](https://github.com/BjornMelin/prompt-atlas/actions)
 
 <!-- Community -->
+
 [![Open Issues](https://img.shields.io/github/issues/BjornMelin/prompt-atlas)](https://github.com/BjornMelin/prompt-atlas/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/BjornMelin/prompt-atlas)](https://github.com/BjornMelin/prompt-atlas/pulls)
 [![Contributors](https://img.shields.io/github/contributors/BjornMelin/prompt-atlas)](https://github.com/BjornMelin/prompt-atlas/graphs/contributors)
@@ -46,11 +48,13 @@ A comprehensive collection of AI development prompts to enhance your coding work
 ## 🚀 Getting Started
 
 1. **Choose Your Template**
+
    - Browse the repository by domain, language, or pattern
    - Select a prompt that matches your development needs
    - Follow the usage instructions in the prompt file
 
 2. **Customize the Prompt**
+
    - Replace placeholders with your specific requirements
    - Add or remove sections as needed
    - Follow the examples provided in each template
@@ -70,33 +74,33 @@ graph TD
     A --> C[tools/]
     A --> D[guides/]
     A --> E[templates/]
-    
+
     B --> F[domains/]
     B --> G[languages/]
     B --> H[patterns/]
-    
+
     F --> F1[cloud/]
     F --> F2[frontend/]
     F --> F3[backend/]
     F --> F4[mobile/]
     F --> F5[devops/]
-    
+
     G --> G1[python/]
     G --> G2[typescript/]
     G --> G3[other/]
-    
+
     H --> H1[architecture/]
     H --> H2[optimization/]
     H --> H3[testing/]
-    
+
     C --> C1[cursor/]
     C --> C2[copilot/]
     C --> C3[chat-models/]
-    
+
     D --> D1[getting-started.md]
     D --> D2[best-practices.md]
     D --> D3[examples/]
-    
+
     E --> E1[prompt-templates/]
     E --> E2[github/]
 ```
@@ -140,13 +144,15 @@ Example usage:
 I need to develop an AWS Lambda function for image processing with:
 
 1. Function Specifications:
+
    - Runtime: Python 3.11
    - Memory: 1024 MB
    - Timeout: 30 seconds
 
 2. Event Sources:
+
    - S3 bucket upload
-   - Event pattern: *.jpg, *.png
+   - Event pattern: _.jpg, _.png
    - DLQ for failed processing
 
 3. Integration Points:
@@ -164,7 +170,7 @@ We welcome contributions to PromptAtlas! Here's how you can help:
 3. **Documentation**: Improve guides, add tutorials, create examples
 4. **Share Your Experience**: Add case studies showing prompt effectiveness
 
-See our [Contribution Guidelines](guides/CONTRIBUTING.md) for detailed instructions.
+See our [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
 
 ## 📜 License
 
@@ -172,7 +178,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**[YOUR_NAME]**  
+**Bjorn Melin**  
 AI/ML Leader · GenAI & LLM Expert · Cloud Architect & Full-Stack Developer
 
 ## 🙏 Acknowledgments
