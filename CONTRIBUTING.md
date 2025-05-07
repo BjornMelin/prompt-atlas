@@ -1,26 +1,26 @@
-# Contributing to AI-Powered Development Prompts
+# Contributing to PromptAtlas
 
-First off, thank you for considering contributing to AIPD! It's people like you that make this resource valuable for the development community.
+First off, thank you for considering contributing to PromptAtlas! It's people like you that make this resource valuable for the development community.
 
 ## 🤝 Ways to Contribute
 
 1. **Add New Prompts**
 
-   - Follow the existing template structure
-   - Include clear examples
-   - Add appropriate documentation
+   - Follow the standardized template structure
+   - Place in the appropriate domain or language directory
+   - Include clear examples and parameters
    - Ensure proper categorization
 
 2. **Improve Existing Prompts**
 
-   - Enhance clarity
-   - Add missing scenarios
+   - Enhance clarity and specificity
+   - Add missing use cases or scenarios
    - Update with new best practices
    - Fix errors or outdated information
 
 3. **Documentation**
 
-   - Improve existing documentation
+   - Improve existing guides
    - Add new examples
    - Create tutorials
    - Translate content
@@ -33,45 +33,72 @@ First off, thank you for considering contributing to AIPD! It's people like you 
 ## 📝 Pull Request Process
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingPrompt`)
-3. Commit your changes (`git commit -m 'Add some AmazingPrompt'`)
-4. Push to the branch (`git push origin feature/AmazingPrompt`)
+2. Create your feature branch (`git checkout -b feat/amazing-prompt`)
+3. Commit your changes using conventional commits (`git commit -m 'feat: add amazing prompt for React components'`)
+4. Push to the branch (`git push origin feat/amazing-prompt`)
 5. Open a Pull Request
 
 ### Pull Request Guidelines
 
 1. **Template Structure**
 
-   - Follow existing prompt templates
-   - Maintain consistent formatting
-   - Include all necessary sections
+   - Use the standard prompt template in `templates/prompt-templates/`
+   - Maintain consistent formatting and sections
+   - Include all necessary sections (Description, Use Cases, Parameters, etc.)
 
-2. **Documentation**
+2. **Organization**
 
-   - Update README.md if needed
+   - Place prompts in the correct directory structure:
+     - Domain-specific prompts in `prompts/domains/`
+     - Language-specific prompts in `prompts/languages/`
+     - Pattern-based prompts in `prompts/patterns/`
+     - Tool configurations in `tools/`
+
+3. **Documentation**
+
+   - Update related documentation if needed
    - Add comments where necessary
    - Include usage examples
 
-3. **Quality**
-   - Test your prompts
+4. **Quality**
+   - Test your prompts with actual AI assistants
    - Ensure proper markdown formatting
    - Check for typos and grammar
+   - Verify that placeholders are clearly marked with `[BRACKETS]`
 
 ## 🌟 Style Guide
 
 ### Prompt Format
 
+Use our standard template format:
+
 ```markdown
-I need to [action] with:
+# [Prompt Title]
 
-1. Requirements:
+## Description
+A brief description of what this prompt helps accomplish.
 
-   - [Requirement 1]
-   - [Requirement 2]
+## Use Cases
+- Primary use case 1
+- Primary use case 2
+- Primary use case 3
 
-2. Technical Specifications:
-   - [Spec 1]
-   - [Spec 2]
+## Parameters
+- `[PARAMETER_1]`: Description of parameter 1
+- `[PARAMETER_2]`: Description of parameter 2
+
+## Example Usage
+...
+
+## Expected Output
+...
+
+## Customization Guide
+...
+
+## Version
+- Current Version: 1.0
+- Last Updated: YYYY-MM-DD
 ```
 
 ### Markdown Guidelines
