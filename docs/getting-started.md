@@ -1,234 +1,138 @@
-# Getting Started with AI-Powered Development Prompts
+# Getting Started with PromptAtlas
+
+Welcome to PromptAtlas! This guide will help you quickly navigate and use the repository to enhance your AI-assisted development workflow.
 
 ## Table of Contents
 
-- [Quick Start](#quick-start)
-- [Understanding Prompt Structure](#understanding-prompt-structure)
-- [Choosing the Right Template](#choosing-the-right-template)
-- [Customizing Templates](#customizing-templates)
-- [Advanced Usage](#advanced-usage)
+- [Getting Started with PromptAtlas](#getting-started-with-promptatlas)
+  - [Table of Contents](#table-of-contents)
+  - [Understanding PromptAtlas](#understanding-promptatlas)
+  - [Finding the Right Prompt](#finding-the-right-prompt)
+    - [By Domain](#by-domain)
+    - [By Language](#by-language)
+    - [By Pattern](#by-pattern)
+  - [Customizing Prompts](#customizing-prompts)
+    - [Example](#example)
+  - [Using AI Tool Configurations](#using-ai-tool-configurations)
+    - [Cursor AI](#cursor-ai)
+    - [GitHub Copilot](#github-copilot)
+  - [Contributing](#contributing)
+  - [Advanced Usage](#advanced-usage)
+    - [Combining Prompts](#combining-prompts)
+    - [Creating Custom Templates](#creating-custom-templates)
 
-## Quick Start
+## Understanding PromptAtlas
 
-### 1. Choose Your Project Type
+PromptAtlas is a comprehensive collection of AI development prompts designed to help you leverage AI assistants more effectively. The repository is organized into:
 
-Navigate to the relevant category in the `prompts/` directory:
+- **Prompt Templates**: Domain-specific and language-specific prompts for various development tasks
+- **Tool Configurations**: Custom settings for AI tools like Cursor and GitHub Copilot
+- **Guides**: Documentation on how to use and contribute to the repository
 
-```bash
-prompts/
-├── cloud/        # Cloud and serverless
-├── frontend/     # Frontend applications
-├── backend/      # Backend services
-└── mobile/       # Mobile development
-```
+Each prompt follows a standardized format to ensure consistency and ease of use.
 
-### 2. Select a Template
+## Finding the Right Prompt
 
-Each category contains specialized templates:
+### By Domain
 
-- Basic application structure
-- Architecture patterns
-- Development workflows
-- Integration guides
+If you're working on a specific type of development, browse the corresponding domain folder:
 
-### 3. Customize the Prompt
+- **Cloud Development**: AWS Lambda functions, serverless applications, cloud architecture
+- **Frontend Development**: React applications, components, performance optimization
+- **Backend Development**: APIs, databases, microservices
+- **Mobile Development**: React Native, Flutter, native apps
 
-1. Copy the template
-2. Replace placeholder values
-3. Add specific requirements
-4. Include context
-5. Specify constraints
+### By Language
 
-### 4. Iterate and Refine
+If you prefer to search by programming language:
 
-- Start with basic requirements
-- Add details progressively
-- Incorporate feedback
-- Expand functionality
+- **Python**: AI/ML engineering, general Python development
+- **TypeScript**: Next.js, React, web development
+- **Other Languages**: Additional language-specific prompts
 
-## Understanding Prompt Structure
+### By Pattern
 
-### 1. Basic Components
+If you're looking for specific architectural or design patterns:
 
-Every prompt should include:
+- **Architecture Patterns**: System design approaches
+- **Optimization Patterns**: Performance improvement strategies
+- **Testing Patterns**: Testing methodologies and best practices
 
-```markdown
-1. Context
+## Customizing Prompts
 
-   - Project background
-   - Current state
-   - Goals
+Each prompt template includes parameters enclosed in square brackets (e.g., `[PARAMETER]`). To customize a prompt:
 
-2. Requirements
+1. **Identify Parameters**: Look for bracketed text like `[RUNTIME]` or `[FRAMEWORK]`
+2. **Replace Values**: Substitute with your specific requirements
+3. **Add Context**: Provide additional details relevant to your project
+4. **Remove Sections**: If a section isn't relevant, you can remove it
 
-   - Functional needs
-   - Technical constraints
-   - Performance targets
+### Example
 
-3. Implementation
-
-   - Technology choices
-   - Architecture decisions
-   - Integration points
-
-4. Success Criteria
-   - Quality metrics
-   - Performance targets
-   - Acceptance criteria
-```
-
-### 2. Optional Elements
-
-Based on project needs:
-
-- Security requirements
-- Compliance needs
-- Scale considerations
-- Cost constraints
-
-## Choosing the Right Template
-
-### 1. Project Assessment
-
-Consider:
-
-- Project scale
-- Technical requirements
-- Time constraints
-- Team expertise
-
-### 2. Template Selection
-
-Choose based on:
-
-- Development phase
-- Technology stack
-- Architecture needs
-- Integration requirements
-
-### 3. Template Categories
-
-Available templates:
-
-1. **Architecture Design**
-
-   - System design
-   - Component interaction
-   - Scalability patterns
-
-2. **Implementation**
-
-   - Code structure
-   - Development patterns
-   - Best practices
-
-3. **Integration**
-   - API design
-   - Service communication
-   - Data flow
-
-## Customizing Templates
-
-### 1. Basic Customization
+Original template section:
 
 ```markdown
-Original:
-I need to develop [application] with [requirements]
+Function Specifications:
 
-Customized:
-I need to develop a real-time chat application with:
-
-- WebSocket support
-- Message persistence
-- User presence
+- Runtime: [RUNTIME]
+- Memory: [MEMORY]
+- Timeout: [TIMEOUT]
 ```
 
-### 2. Adding Requirements
+Customized section:
 
 ```markdown
-Technical Requirements:
+Function Specifications:
 
-- Runtime: Node.js 18+
-- Database: MongoDB
-- Cache: Redis
-- Message Queue: RabbitMQ
+- Runtime: Python 3.11
+- Memory: 1024 MB
+- Timeout: 30 seconds
 ```
 
-### 3. Specifying Constraints
+## Using AI Tool Configurations
 
-```markdown
-Constraints:
+PromptAtlas includes configurations for various AI assistants:
 
-- Maximum latency: 100ms
-- Concurrent users: 10,000
-- Message size: < 1MB
-- Storage: 30 days
-```
+### Cursor AI
+
+1. Navigate to the `tools/cursor/` directory
+2. Copy the desired configuration files to your `.cursor/rules` directory
+3. Reference these files when starting a Cursor AI conversation
+
+### GitHub Copilot
+
+1. Find Copilot configurations in the `tools/copilot/` directory
+2. Follow the instructions in each file to configure Copilot for your needs
+
+## Contributing
+
+We welcome contributions! To contribute:
+
+1. Fork the repository
+2. Create a new branch for your changes
+3. Make your changes following our templates
+4. Submit a pull request
+
+See the [CONTRIBUTING.md](../CONTRIBUTING.md) file for detailed guidelines.
 
 ## Advanced Usage
 
-### 1. Combining Templates
+### Combining Prompts
 
-Merge multiple templates for complex projects:
+You can combine multiple prompts for complex projects. For example:
 
-```markdown
-1. Architecture Template
-   - API Design Template
-   - Database Schema Template
-     = Complete System Design
-```
+1. Start with a domain-specific architecture prompt
+2. Add language-specific implementation details
+3. Include pattern-specific optimizations
 
-### 2. Custom Sections
+### Creating Custom Templates
 
-Add project-specific sections:
+If you have specific needs not covered by existing templates:
 
-- Compliance requirements
-- Legacy system integration
-- Migration strategies
-- Rollout plans
+1. Start with the closest matching template
+2. Customize parameters and sections
+3. Consider contributing your template back to the repository
 
-### 3. Template Extension
+---
 
-Extend templates with:
-
-- Custom workflows
-- Team standards
-- Company policies
-- Industry requirements
-
-## Tips for Success
-
-1. **Start Simple**
-
-   - Begin with core requirements
-   - Add complexity gradually
-   - Validate assumptions early
-
-2. **Be Specific**
-
-   - Use exact versions
-   - Specify numbers
-   - Define boundaries
-   - Include metrics
-
-3. **Think Long-term**
-
-   - Consider maintenance
-   - Plan for scaling
-   - Document decisions
-   - Include monitoring
-
-4. **Iterate**
-   - Gather feedback
-   - Refine requirements
-   - Update constraints
-   - Improve clarity
-
-## Need Help?
-
-- Check example implementations
-- Review best practices
-- Open an issue for questions
-- Contribute improvements
-
-Happy coding! 🚀
+Need more help? Check out our [best-practices.md](best-practices.md) guide or open an issue on GitHub.
