@@ -54,13 +54,12 @@ When researching, scraping, crawling, or referencing documentation, use these of
 ### Core Services & Libraries
 
 - **Pydantic V2:** [https://docs.pydantic.dev/latest/](https://docs.pydantic.dev/latest/)
-- **DragonflyDB:** [https://www.dragonflydb.io/docs/](https://www.dragonflydb.io/docs/)
+- **FastAPI:** [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
 - **OWASP:** [https://owasp.org/](https://owasp.org/)
 - **LangGraph:** [https://langchain-ai.github.io/langgraph/](https://langchain-ai.github.io/langgraph/)
 - **Model Context Protocol (MCP):** [https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
 - **Playwright:** [https://playwright.dev/docs/intro](https://playwright.dev/docs/intro)
 - **Crawl4AI:** [https://docs.crawl4ai.com/](https://docs.crawl4ai.com/)
-- **Mem0:** [https://docs.mem0.ai/overview](https://docs.mem0.ai/overview)
 
 ### APIs and SDKs
 
@@ -69,17 +68,13 @@ When researching, scraping, crawling, or referencing documentation, use these of
 - **Supabase:** [https://supabase.com/docs](https://supabase.com/docs)
 - **Google Maps Platform:** [https://developers.google.com/maps/documentation](https://developers.google.com/maps/documentation)
 - **Google Maps Python SDK:** [https://github.com/googlemaps/google-maps-services-python](https://github.com/googlemaps/google-maps-services-python)
-- **Google Calendar API:** [https://developers.google.com/workspace/calendar/api/guides/overview](https://developers.google.com/workspace/calendar/api/guides/overview)
-- **Google Calendar API Python Quickstart:** [https://developers.google.com/workspace/calendar/api/quickstart/python](https://developers.google.com/workspace/calendar/api/quickstart/python)
-- **Duffel Flights API:** [https://duffel.com/docs/api/overview/welcome](https://duffel.com/docs/api/overview/welcome)
-- **OpenWeatherMap API:** [https://openweathermap.org/api](https://openweathermap.org/api)
 - **Time Library:** *(Standard Python Library, [Docs](https://docs.python.org/3/library/time.html))*
 
 ---
 
 ## MCP Server Tool Usage Guide
 
-- **supabase:** For all database-related operations in your Supabase project (`SUPABASE_PROJECT_ID=uzqcjksjeoupwzkfhreo`).
+- **supabase:** For all database-related operations in your Supabase project (configure with your project ID).
 - **repomix:** For advanced repo operations—summarization, packing/unpacking, code merges, analysis, and automated code manipulation.
 - **github:** For all GitHub actions—issue and PR creation/updates, commenting, status checks, and automation of review processes.
 - **git:** For local git operations—branching, commits, diffs, merges, reverts, logs, tagging, etc.
