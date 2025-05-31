@@ -1,39 +1,71 @@
-# PromptAtlas Prompt Library
+# PromptAtlas - Prompts Directory
 
-This directory contains all the prompt templates organized by category to help you accelerate your AI-assisted development workflows.
+This directory contains a comprehensive collection of AI development prompts organized by tool/platform and domain.
 
-## Directory Structure
+## 🛠️ Tool-Specific Prompts
 
-- **domains/** - Domain-specific prompts
+### AI Agents
+- **ai-agents/** - AI agent development prompts using OpenAI Agents SDK, LangGraph, and other agent frameworks
 
-  - **cloud/** - Cloud development (AWS, serverless, architecture)
-  - **frontend/** - Frontend development (React, components, performance)
-  - **backend/** - Backend development (APIs, databases, microservices)
-  - **mobile/** - Mobile development (React Native, Flutter, Native)
-  - **devops/** - CI/CD and infrastructure
+### Claude Code
+- **claude-code/** - Claude Code slash command files for project automation, task completion, and development workflows
 
-- **languages/** - Language-specific prompts
+### GitHub Copilot  
+- **github-copilot/** - GitHub Copilot instructions and configurations for enhanced AI-assisted coding
 
-  - **python/** - Python development
-  - **typescript/** - TypeScript development
-  - **other/** - Additional languages
+### Cursor AI
+- **cursor-ai/** - Cursor rules, project configurations, and workflow prompts for the Cursor IDE
 
-- **patterns/** - Common prompt patterns
-  - **architecture/** - Design patterns
-  - **optimization/** - Performance patterns
-  - **testing/** - Testing patterns
+### MCP Servers
+- **mcp-servers/** - Model Context Protocol server prompts and configurations
 
-## Using Prompts
+### Coding Guidelines
+- **coding-guidelines/** - General coding standards, style guides, and development principles
 
-Each prompt follows a standardized format:
+## 🎯 Domain-Specific Prompts
 
-1. **Description**: What the prompt helps you accomplish
-2. **Use Cases**: Scenarios where the prompt is most useful
-3. **Parameters**: Variables you should customize
-4. **Example Usage**: How to adapt the prompt for your needs
-5. **Expected Output**: What the AI assistant should produce
-6. **Customization Guide**: Tips for adapting to specific scenarios
+### Backend Development
+- **backend/** - API design, database management, microservices architecture
+
+### Frontend Development  
+- **frontend/** - React components, performance optimization, UI/UX patterns
+
+### Mobile Development
+- **mobile/** - Flutter, React Native, and native mobile development
+
+### Cloud & Infrastructure
+- **cloud/** - AWS, serverless architecture, cloud-native patterns
+- **cicd/** - CI/CD pipelines and DevOps automation
+
+### Programming Languages
+- **python/** - Python experts, AI/ML specialists, optimization patterns
+- **typescript/** - Next.js, TypeScript, and modern JS development
+
+## 🧠 Meta-Prompting
+- **prompt-engineering/** - Tools and techniques for creating and optimizing prompts
+
+## Usage Guidelines
+
+1. **Tool-Specific Workflows**: Use the appropriate tool directory for platform-specific prompts (Claude Code, Cursor, etc.)
+
+2. **Domain Expertise**: Leverage domain directories for technical implementation guidance
+
+3. **Prompt Engineering**: Utilize meta-prompting tools for creating custom prompts
+
+4. **Combinations**: Mix and match prompts from different categories as needed for complex workflows
 
 ## Contributing
 
-Want to add a new prompt? Follow our [Contribution Guidelines](../guides/CONTRIBUTING.md).
+When adding new prompts:
+- Place tool-specific prompts in their respective tool directories
+- Use domain directories for technical/implementation focused content  
+- Include clear documentation and usage examples
+- Follow the established naming conventions
+
+## Structure Philosophy
+
+This organization prioritizes:
+- **Tool-based workflows** - Easy to find prompts for your specific development environment
+- **Domain expertise** - Quick access to specialized knowledge areas
+- **Flat hierarchy** - Minimal nesting for maximum discoverability
+- **Clear separation** - Distinct categories prevent overlap and confusion

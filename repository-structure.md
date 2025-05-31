@@ -5,189 +5,183 @@ prompt-atlas/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.md               # Template for bug reports
-│   │   ├── feature_request.md          # Template for feature requests
-│   │   └── prompt_template.md          # Template for new prompt submissions
+│   │   └── feature_request.md          # Template for feature requests
 │   └── workflows/
 │       ├── markdown-lint.yml           # GitHub Action for markdown linting
 │       └── mlc_config.json             # Configuration for markdown link checker
 │
 ├── docs/
-│   ├── best-practices.md               # Development prompt best practices
 │   ├── getting-started.md              # Quick start guide for new users
 │   └── examples/
 │       └── lambda-image-processor.md   # Example implementation
 │
-├── guides/
-│   └── getting-started.md              # Getting started guide
-│
-├── prompts/
-│   ├── domains/                        # Domain-specific prompts
-│   │   ├── cloud/                      # Cloud development
-│   │   │   ├── aws-lambda.md
-│   │   │   ├── serverless.md
-│   │   │   └── architecture.md
-│   │   ├── frontend/                   # Frontend development
-│   │   │   ├── react.md
-│   │   │   ├── components.md
-│   │   │   └── performance.md
-│   │   ├── backend/                    # Backend development
-│   │   │   ├── api.md
-│   │   │   ├── database.md
-│   │   │   └── microservices.md
-│   │   ├── mobile/                     # Mobile development
-│   │   │   ├── react-native.md
-│   │   │   ├── flutter.md
-│   │   │   └── native.md
-│   │   └── devops/                     # CI/CD & infrastructure
-│   │       └── cicd-and-cloud-integration.md
+├── prompts/                            # AI development prompts organized by tool and domain
+│   ├── README.md                       # Overview of prompts directory structure
 │   │
-│   ├── languages/                      # Language-specific prompts
-│   │   ├── python/                     # Python development
-│   │   │   ├── python-ai-ml-expert.md
-│   │   │   ├── python-simple-optimal-code-prompt.md
-│   │   │   └── seasoned-expert-python-ai-ml-swe.md
-│   │   ├── typescript/                 # TypeScript development
-│   │   │   └── nextjs-expert-dev.md
-│   │   └── README.md                   # Overview of language-specific prompts
+│   ├── 🛠️ TOOL-SPECIFIC PROMPTS
+│   ├── ai-agents/                      # AI agent development using OpenAI Agents SDK
+│   │   └── agent_development_prompt.md # Comprehensive agent development guide
 │   │
-│   └── patterns/                       # Common prompt patterns
-│       ├── architecture/               # Design patterns
-│       ├── optimization/               # Performance patterns
-│       ├── testing/                    # Testing patterns
-│       └── README.md                   # Overview of prompt patterns
-│
-├── tools/                              # AI assistant configurations
-│   ├── cursor/                         # Cursor AI rules
-│   │   └── agent/                      # Autonomous AI agent framework
-│   │       └── system_prompt.md
-│   ├── chat-models/                    # ChatGPT, Claude, etc.
-│   │   └── prompt-engineering/         # Prompt engineering guides
-│   │       └── master-prompt-generator.md
-│   └── README.md                       # Overview of tools
-│
-├── rules/
-│   ├── cursor-ai-agent/                # Cursor AI Agent framework
-│   │   ├── README.md                   # Overview and instructions
-│   │   ├── system_prompt.md            # System prompt for Cursor AI
+│   ├── claude-code/                    # Claude Code slash command files
+│   │   ├── complete-backend-task.md    # Backend task automation
+│   │   ├── complete-frontend-task.md   # Frontend task automation
+│   │   ├── complete-highest-todo.md    # General TODO completion
+│   │   ├── complete-highest-todo-vect-db.md # Vector database tasks
+│   │   ├── complete-integration-task.md # API/Integration tasks
+│   │   ├── complete-integration-api-task.md # KISS-focused API tasks
+│   │   ├── continue-backend-task.md    # Resume in-progress backend work
+│   │   ├── finalize-merge-pr.md        # PR merge finalization
+│   │   ├── fix-update-pr.md            # PR update and fixes
+│   │   ├── implement-issue.md          # GitHub issue implementation
+│   │   ├── issue_completion_refactor.md # Complete TODO/GitHub issues
+│   │   ├── iterate-todos.md            # Iterative TODO completion
+│   │   ├── phase-implementation.md     # Phased project implementation
+│   │   ├── start-pr-review.md          # Pull request review initiation
+│   │   └── tripsage-core-prompt.md     # Project-specific core prompt
+│   │
+│   ├── github-copilot/                 # GitHub Copilot instructions and configs
+│   │   └── instructions/               # Copilot instruction files
+│   │       ├── chat-agent-mcp-code-instruct-py_2025_05_02.json
+│   │       └── chat-codegen-instruct-py_2025_03_13.json
+│   │
+│   ├── cursor-ai/                      # Cursor IDE rules and configurations
+│   │   ├── README.md                   # Cursor AI setup and usage guide
+│   │   ├── git_feature_workflow.mdc    # Git workflow rules for Cursor
 │   │   ├── project_config.md           # Long-term memory template
-│   │   └── workflow_state.md           # Short-term memory and rules template
+│   │   ├── system_prompt.md            # System prompt for Cursor AI
+│   │   └── workflow_state.md           # Short-term memory and rules
 │   │
-│   ├── cursorrules/                    # Rules for Cursor AI coding assistant
-│   │   └── git_feature_workflow.mdc    # Git feature branch workflow rules
+│   ├── mcp-servers/                    # Model Context Protocol prompts
+│   │   └── mcp-agent-template.prompt.md # MCP agent template
 │   │
-│   └── copilot/                        # GitHub Copilot optimization
-│       ├── instructions/               # Copilot instructions
-│       │   ├── chat-agent-mcp-code-instruct-py_2025_05_02.json
-│       │   └── chat-codegen-instruct-py_2025_03_13.json
-│       └── prompts/                    # Copilot prompts
-│           └── mcp-agent-template.prompt.md
+│   ├── coding-guidelines/              # General coding standards and principles
+│   │   └── CLAUDE.md                   # Pragmatic development charter
+│   │
+│   ├── 🎯 DOMAIN-SPECIFIC PROMPTS
+│   ├── backend/                        # Backend development
+│   │   ├── api-design.md               # API design patterns
+│   │   ├── api.md                      # General API development
+│   │   ├── database.md                 # Database design and optimization
+│   │   └── microservices.md            # Microservices architecture
+│   │
+│   ├── frontend/                       # Frontend development
+│   │   ├── components.md               # Component design patterns
+│   │   ├── performance.md              # Performance optimization
+│   │   ├── react-components.md         # React component development
+│   │   └── react.md                    # React development patterns
+│   │
+│   ├── mobile/                         # Mobile development
+│   │   ├── flutter.md                  # Flutter development
+│   │   ├── native.md                   # Native mobile development
+│   │   └── react-native.md             # React Native development
+│   │
+│   ├── cloud/                          # Cloud development and architecture
+│   │   ├── architecture.md             # Cloud architecture patterns
+│   │   ├── aws-lambda.md               # AWS Lambda development
+│   │   └── serverless.md               # Serverless development
+│   │
+│   ├── cicd/                           # CI/CD and DevOps
+│   │   └── cicd-and-cloud-integration.md # CI/CD pipeline patterns
+│   │
+│   ├── python/                         # Python development
+│   │   ├── python-ai-ml-expert.md      # AI/ML Python expert
+│   │   ├── python-expert.md            # General Python expert
+│   │   ├── python-simple-optimal-code-prompt.md # Optimal Python patterns
+│   │   └── seasoned-expert-python-ai-ml-swe.md # Senior Python AI/ML engineer
+│   │
+│   ├── typescript/                     # TypeScript development
+│   │   └── nextjs-expert-dev.md        # Next.js expert development
+│   │
+│   └── 🧠 META-PROMPTING
+│       └── prompt-engineering/         # Prompt creation and optimization tools
+│           ├── master-prompt-generator  # Master prompt generation tool
+│           └── master-prompt-generator.xml # XML version of prompt generator
 │
 ├── templates/                          # Standardized formats
 │   └── prompt-templates/               # Base templates for different categories
 │       └── standard-prompt.md          # Standard prompt template
 │
+├── .gitignore                          # Git ignore patterns
 ├── CONTRIBUTING.md                     # Contribution guidelines
 ├── LICENSE                             # MIT License
 ├── README.md                           # Project documentation and overview
-└── repository-structure.md             # Repository structure guide
+└── repository-structure.md             # This file - repository structure guide
 ```
 
-## Key Files and Their Contents
+## Organizational Philosophy
 
-1. **README.md**
+The repository is organized around two primary axes:
 
-   - Project overview with badges
-   - Feature highlights
-   - Repository structure diagram
-   - Prompt categories
-   - Usage instructions
-   - Contribution guidelines
-   - License information
-   - Author details
+### 🛠️ Tool-Specific Organization
+Prompts are grouped by the AI tool or platform they're designed for:
+- **Claude Code**: Slash commands for project automation
+- **GitHub Copilot**: Instructions and configurations for enhanced coding assistance
+- **Cursor AI**: Rules and workflows for the Cursor IDE
+- **AI Agents**: Advanced agent development frameworks
+- **MCP Servers**: Model Context Protocol configurations
 
-2. **CONTRIBUTING.md**
+### 🎯 Domain-Specific Organization  
+Technical prompts are organized by development domain:
+- **Backend**: APIs, databases, microservices
+- **Frontend**: React, components, performance
+- **Mobile**: Flutter, React Native, native development
+- **Cloud**: AWS, serverless, architecture
+- **Languages**: Python, TypeScript specializations
 
-   - Contribution guidelines
-   - PR process
-   - Style guide
-   - Code of conduct
-   - Review process
+## Key Benefits of This Structure
 
-3. **.github/workflows/markdown-lint.yml**
+1. **Tool-First Discovery**: Developers can quickly find prompts for their specific development environment
+2. **Domain Expertise**: Easy access to specialized knowledge areas for implementation
+3. **Flat Hierarchy**: Minimal nesting reduces navigation complexity
+4. **Clear Separation**: Distinct categories prevent overlap and confusion
+5. **Scalability**: Easy to add new tools or domains without restructuring
 
-   ```yaml
-   name: Markdown Lint
-   on:
-     push:
-       paths:
-         - "**.md"
-     # ... rest of workflow configuration
-   ```
+## Usage Patterns
 
-4. **docs/best-practices.md**
+### For Tool-Specific Workflows
+```bash
+# Find Claude Code commands
+prompts/claude-code/
 
-   - Prompt writing guidelines
-   - Template usage
-   - Common patterns
-   - Success strategies
+# Set up Cursor AI
+prompts/cursor-ai/
 
-5. **prompts/domains/cloud/aws-lambda.md**
+# Configure GitHub Copilot
+prompts/github-copilot/
+```
 
-   ```markdown
-   # AWS Lambda Development Prompts
+### For Domain Expertise
+```bash
+# Backend development guidance
+prompts/backend/
 
-   ## Description
+# Frontend patterns and optimization
+prompts/frontend/
 
-   A collection of prompts for AWS Lambda function development.
+# Python AI/ML development
+prompts/python/
+```
 
-   ## Use Cases
+### For Meta-Prompting
+```bash
+# Prompt engineering tools
+prompts/prompt-engineering/
 
-   - Serverless function development
-   - Event-driven architectures
-   - Cloud integration
+# General coding guidelines
+prompts/coding-guidelines/
+```
 
-   # ... rest of content
-   ```
+## File Naming Conventions
 
-6. **tools/cursor/agent/system_prompt.md**
+- **Tool directories**: Use the tool name (claude-code, cursor-ai, github-copilot)
+- **Domain directories**: Use technical domain names (backend, frontend, mobile)
+- **Files**: Use descriptive kebab-case names with .md extension
+- **Special files**: Configuration files maintain their original extensions (.json, .xml, etc.)
 
-   ```markdown
-   # Cursor AI Agent System Prompt
+## Migration Notes
 
-   You are an autonomous AI developer operating on a two-file system for project management and execution. Your knowledge and actions are guided exclusively by:
-
-   1. project_config.md (Long-Term Memory): Contains stable project information...
-   2. workflow_state.md (Short-Term Memory + Rules + Log): Contains dynamic information...
-
-   # ... rest of system prompt
-   ```
-
-7. **rules/cursorrules/git_feature_workflow.mdc**
-
-   ```markdown
-   # Git Feature Branch Workflow with Conventional Commits
-
-   ## Guiding Principle: Conventional Commits
-
-   **All Git operations MUST adhere to the Conventional Commits specification.**
-
-   # ... rest of workflow rules
-   ```
-
-8. **templates/prompt-templates/standard-prompt.md**
-
-   ```markdown
-   # [Prompt Title]
-
-   ## Description
-
-   A brief description of what this prompt helps accomplish.
-
-   ## Use Cases
-
-   - Primary use case 1
-   - Primary use case 2
-   - Primary use case 3
-
-   # ... rest of template structure
-   ```
+This structure represents a complete reorganization from the previous version:
+- Former `rules/` content moved to tool-specific directories
+- Former `tools/` content integrated into appropriate categories  
+- Domain structure flattened from nested `domains/languages/` to top-level
+- Clear separation between tool-specific and domain-specific content
