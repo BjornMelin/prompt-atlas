@@ -61,6 +61,7 @@ When adding new prompts:
 - Use domain directories for technical/implementation focused content  
 - Include clear documentation and usage examples
 - Follow the established naming conventions
+- See [CONTRIBUTING.md](../CONTRIBUTING.md) for detailed guidelines
 
 ## Structure Philosophy
 
