@@ -71,7 +71,7 @@ Do NOT support or maintain backwards compatibility—completely replace legacy s
 
 ## MCP Server Tool Usage Guide
 
-- **supabase:** For all database-related operations in your Supabase project (`SUPABASE_PROJECT_ID=uzqcjksjeoupwzkfhreo`).
+- **supabase:** For all database-related operations in your Supabase project (configure with your project ID).
 - **repomix:** For advanced repo operations—summarization, packing/unpacking, code merges, analysis, and automated code manipulation.
 - **github:** For all GitHub actions—issue and PR creation/updates, commenting, status checks, automation of review processes.
 - **git:** For local git operations—branching, commits, diffs, merges, reverts, logs, tagging, etc.
